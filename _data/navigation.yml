@@ -1,0 +1,10 @@
+# Site navigation links
+
+- title: About
+  url: /about/
+  excerpt: "About me"
+  image:
+
+- title: Archive
+  url: /archive/
+  excerpt: "List of articles"

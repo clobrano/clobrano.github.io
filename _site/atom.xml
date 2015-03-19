@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title>Quantum Leap</title>
+  <generator uri="https://github.com/jekyll/jekyll">Jekyll v2.4.0</generator>
+    <icon>/apple-touch-icon-precomposed.png</icon>
+  <subtitle></subtitle>
+  <link href="/atom.xml" rel="self"/>
+  <link href="/" rel="alternate" type="text/html"/>
+  <updated>2015-03-18T23:32:06+01:00</updated>
+  <id>/</id>
+  <author>
+    <name>Carlo Lobrano</name>
+    <uri>/</uri>
+    <email>c.lobrano@gmail.com</email>
+  </author>
+
+  
+  <entry>
+    <title>Working Remotely</title>
+    <link href="/working-remotely/"/>
+    <updated>2015-01-04T00:00:00+01:00</updated>
+    <id>/working-remotely</id>
+    <author>
+      <name>Carlo Lobrano</name>
+      <uri>/</uri>
+      <email>c.lobrano@gmail.com</email>
+    </author>
+    <content type="html">
+      
+      &lt;p&gt;Using &lt;a href=&quot;http://qz.com/319905/why-even-engineers-think-working-from-home-is-a-bad-idea/&quot;&gt;this&lt;/a&gt; interesting and full of references article as starting point, I want to express my point of view about “working in office” v.s. “working from home” or more in general “remotely”.&lt;/p&gt;
+
+&lt;p&gt;The idea of the article is that even workers themselves prefer working in an office because of the following reasons:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;office will promote team productivity, which is the kind of target a company should aim to (while working alone/from home will promote individual productivity).&lt;/li&gt;
+  &lt;li&gt;spontaneous collaboration, in the sense of generic talking/meetings that sparks unhexpected new ideas about how to deal with some issues that would have taken long hours to be solved by a single worker.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Said that, the usage of wide open space offices will bring also noise and visual distractions (from my point of view, even different working pace between collegues can be a distraction).&lt;/p&gt;
+
+&lt;p&gt;Well, this topic interests me for two reasons. The first is that I like very much all kind of collaborative tools, software and techniques so that I enjoy the idea of try them out. The latter is that in the last three year and a half I worked in automotive projects where the client was one thousand miles away, so that I had to travel a lot (e.g. weekly business trip for the last 6 months in a row), which have been a big cost for my company and a great stress for myself. Why not working remotely? Well in this case I agreed that working close to my team wasn’t totally a bad choice, even if traveling so much has been very tiring.&lt;/p&gt;
+
+&lt;p&gt;Basically the biggest problems were:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Hardware: automotive requires specific hardware, which is often created at the same time of the software. It’s like developing Android OS features or apps for a phone yet to be released: teams work on prototypes and prototypes change over time, require fixes, have different versions and so on. It is not so simple to give each developer all the hardware he can require for all the time of development and hardware is often shared among people of the same team.&lt;/li&gt;
+  &lt;li&gt;Project choices: I also had to plan and design some features, so I spent lot of time to talk with my contact person about possibilities, choises, problems, etc.&lt;/li&gt;
+  &lt;li&gt;communication tools: spontaneous communication really works well. Many times I had a problem I just raised my head and directly asked my collegues, and they did the same. Also I won’t even talk about how good is to share generic ideas and chatting with collegues that are experiencing the same stuff you are. In fact when I had the chance to work remotely it was weird at the beginning. Technically no real issues, I kept working at the same pace, with no big distractions except that communication was slower using e-mails and was not spontenous at all. The only emergency we had in that period had been tackled with a phone call, after having found a room available, that is slower.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Also, the office is a place where junior developers can learn, if nobody’s home, how they can learn anything.&lt;/p&gt;
+
+&lt;p&gt;So I think that working only remotely is not totaly ok, but a mix between normal offices and remote office is a interesting solution and should be promoted where possible. In order to make this combination effective the key are the tools, which have to be compared against verbal and direct communication which is an effective, evolved and easy to use technology impossible to outclass.&lt;/p&gt;
+
+&lt;p&gt;I only know free tools like Skype, Hangouts, etc. since I didn’t had the chance to use commercial platforms for team communication (which I think are more suitable) like &lt;a href=&quot;https://slack.com/&quot;&gt;Slack&lt;/a&gt;, but even those are far better than phone. Using advanced chat I have everything at my hand, indexed and easy to find in a second time, I can share designs, drawings (with €30 one can have a pretty decent graphic tablet), schemes. Using a Wiki I can have all the information I need. The list of possible solution is quite long. So it’s only a problem of tools, but it’s the company that has to invest on those tools, so if the company won’t encourage this kind of work style, there isn’t much a worker can do.&lt;/p&gt;
+
+    </content>
+  </entry>
+  
+  <entry>
+    <title>Openshift and SSH Keys</title>
+    <link href="/openshift-and-ssh-keys/"/>
+    <updated>2014-06-08T00:00:00+02:00</updated>
+    <id>/openshift-and-ssh-keys</id>
+    <author>
+      <name>Carlo Lobrano</name>
+      <uri>/</uri>
+      <email>c.lobrano@gmail.com</email>
+    </author>
+    <content type="html">
+      
+      &lt;p&gt;Since I moved back to Ubuntu-based machines I had some “problems” with Openshift application management (I am talking about command line).
+As you can read &lt;a href=&quot;/blog/post/1/&quot;&gt;here&lt;/a&gt;, I use Openshift to host this blog and if until I worked on a Fedora machine everything was fine, on Ubuntu-based machines has totally been another story.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;This is totally my fault&lt;/strong&gt;, since I never had time/will to check what is wrong whity my usage of &lt;code&gt;rhc&lt;/code&gt; client, but I just decided to change that.&lt;/p&gt;
+
+&lt;p&gt;The starting point is an application (this blog) already on the server and up and running. If the application has been created to the same machine you are working at the time you want modify something it’s fine, because &lt;code&gt;rhc&lt;/code&gt; client created the SSH keys you need (that you &lt;strong&gt;really&lt;/strong&gt; need). But what if you changed machine? Well, it turned out to be pretty simple (my bad to have waisted so much time)!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;We have two steps&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;on-client-side&quot;&gt;On client side&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Generate a new pair of ssh keys&lt;a rel=&quot;nofollow&quot; href=&quot;#footnote1&quot; id=&quot;ref_footnote1&quot;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;. I suggest to run the command directly &lt;code&gt;.ssh&lt;/code&gt; folder.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ssh&lt;/span&gt;-keygen -t rsa -C &lt;span class=&quot;s2&quot;&gt;&amp;quot;your.email@yourprovider.com&amp;quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Add your new key to the ssh-agent&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ssh&lt;/span&gt;-add id_rsa  &lt;span class=&quot;c&quot;&gt;# id_rsa is the *default* key&amp;#39;s name.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;[optional] Move your keys into a &lt;code&gt;.ssh&lt;/code&gt; subfolder. If and only if you do so, you also need to create a &lt;code&gt;config&lt;/code&gt; file to let the ssh client know which keys are for which host.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$mv&lt;/span&gt; id_rsa* ~/.ssh/openshift
+&lt;span class=&quot;nv&quot;&gt;$vim&lt;/span&gt; config  &lt;span class=&quot;c&quot;&gt;# write something like the following&lt;/span&gt;
+
+&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt; Host &amp;lt;application-name&amp;gt;.rhcloud.com
+&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;     Hostname &amp;lt;application-name&amp;gt;.rhcloud.com
+&lt;span class=&quot;m&quot;&gt;3&lt;/span&gt;     PreferredAuthentications publickey
+&lt;span class=&quot;m&quot;&gt;4&lt;/span&gt;     IdentityFile ~/.ssh/openshift/id_rsa
+
+&lt;span class=&quot;nv&quot;&gt;$sudo&lt;/span&gt; service ssh restart  &lt;span class=&quot;c&quot;&gt;# Let the client know about the changes (I am not sure it is needed).&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;on-openshift-side&quot;&gt;On Openshift side&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Go to your application setting page&lt;/li&gt;
+  &lt;li&gt;Click on &lt;code&gt;Add a new key...&lt;/code&gt; button&lt;/li&gt;
+  &lt;li&gt;Copy your &lt;code&gt;~/.ssh/openshift/id_rsa.pub&lt;/code&gt; into the given box&lt;/li&gt;
+  &lt;li&gt;Test connection: Check &lt;code&gt;Want to log in to your application?&lt;/code&gt; link in your application page. Click on it and copy the ssh command, then execute it on your shell, adding the option &lt;strong&gt;-vvv&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;ssh -vvv ...&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;The following line should appear&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;debug1: Offering RSA public key: &amp;lt;your-home&amp;gt;/.ssh/openshift/id_rsa
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;and you’ll be logged into your application. Just type &lt;code&gt;exit&lt;/code&gt; before do something wrong :)&lt;/p&gt;
+
+&lt;p&gt;And that’s it! I can now clone and modify and the rest.&lt;/p&gt;
+
+&lt;h4 id=&quot;references&quot;&gt;References&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://help.github.com/articles/generating-ssh-keys&quot;&gt;GitHub Help&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;footnotes&quot;&gt;Footnotes&lt;/h4&gt;
+&lt;ol&gt;
+  &lt;li&gt;You are supposed to already have a pair of files named &lt;em&gt;id_rsa&lt;/em&gt; on your &lt;code&gt;.ssh&lt;/code&gt; folder. If your &lt;code&gt;id_rsa.pub&lt;/code&gt; file is something like &lt;code&gt;ssh-rsa&lt;/code&gt; followed by a bunch of characters, you can use that whithout generating a new pair.&lt;a rel=&quot;nofollow&quot; href=&quot;#ref_footnote1&quot; id=&quot;footnote1&quot;&gt;[↩]&lt;/a&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+
+    </content>
+  </entry>
+  
+  <entry>
+    <title>Switch-to-application Shortcut on Linux</title>
+    <link href="/switch-to-application-shortcut-on-linux/"/>
+    <updated>2014-01-31T00:00:00+01:00</updated>
+    <id>/switch-to-application-shortcut-on-linux</id>
+    <author>
+      <name>Carlo Lobrano</name>
+      <uri>/</uri>
+      <email>c.lobrano@gmail.com</email>
+    </author>
+    <content type="html">
+      
+      &lt;p&gt;There is always one software that we use a lot at work. As a programmer, most of my daily work is spent on a Linux terminal or on the IDE.&lt;/p&gt;
+
+&lt;p&gt;Now, when an application is so frequently used it wouldn’t be great if we could run it with a shortcut or to give it the focus if it is already running? Thanks to this &lt;a href=&quot;http://vickychijwani.github.io/2012/04/15/blazing-fast-application-switching-in-linux/&quot;&gt;article&lt;/a&gt;, the answer is &lt;strong&gt;&lt;a href=&quot;http://linux.die.net/man/1/wmctrl&quot;&gt;wmctrl&lt;/a&gt;&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;$apt-cache show wmctrl&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Wmctrl is a command line tool to interact with an EWMH/NetWM compatible X Window Manager (examples include Enlightenment, icewm, kwin, metacity, and sawfish).&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Wmctrl provides command line access to almost all the features defined in the EWMH specification. For example it can maximize windows, make them sticky, set them to be always on top. It can  switch and resize desktops and perform many other useful operations.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Basically, what we need is the following script that checks for the application already running and &lt;em&gt;activate it&lt;/em&gt; or run a new instance of it&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;cat /usr/local/bin/run-or-raise.sh
+&lt;span class=&quot;c&quot;&gt;#!/bin/sh&lt;/span&gt;
+wmctrl -x -a &lt;span class=&quot;s2&quot;&gt;&amp;quot;$1&amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;$1&amp;quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;For example, I really like &lt;strong&gt;Konsole&lt;/strong&gt;, the KDE terminal emulator, so that I installed it also in my new OS of choice &lt;a href=&quot;http://elementaryos.org/&quot;&gt;ElementaryOS&lt;/a&gt;, and I binded a keyword shortcut (&lt;strong&gt;F12&lt;/strong&gt; as in &lt;a href=&quot;http://yakuake.kde.org/&quot;&gt;Yakuake&lt;/a&gt;) to the command &lt;code&gt;run-or-raise.sh konsole&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;On ElementaryOS, you need to install &lt;a href=&quot;http://www.elementaryupdate.com/2013/06/finally-elementary-tweaks.html&quot;&gt;Elementary Tweaks&lt;/a&gt; to add new keybord shortcuts, but there are lot of other way to do it: &lt;a href=&quot;https://www.google.com/search?client=ubuntu&amp;amp;channel=fs&amp;amp;q=add+custom+keyword+shortcuts+linux&amp;amp;ie=utf-8&amp;amp;oe=utf-8&amp;amp;gfe_rd=ctrl&amp;amp;ei=tTzqUpSMLqqO8QeRroCAAg&amp;amp;gws_rd=cr&quot;&gt;google-search&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Since I often change notebook or just install a new OS, I put the generation of most of this stuff in a script like the following&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo apt-get install -y konsole
+echo &quot;#!/bin/bash&quot; &amp;gt; ~/run-or-raise.sh
+echo &quot;wmctrl -x -a \&quot;\$1\&quot; || \&quot;\$1\&quot;&quot; &amp;gt;&amp;gt; ~/run-or-raise.sh
+sudo mv ~/run-or-raise.sh /usr/local/bin
+sudo chmod a+x /usr/local/bin/run-or-raise.sh
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Of course the &lt;code&gt;raise-or-run&lt;/code&gt; script can be used on whatever other application, I use it also with Firefox and VIM.&lt;/p&gt;
+
+    </content>
+  </entry>
+  
+  <entry>
+    <title>Top Things to Do After Installing Ubuntu. the Script</title>
+    <link href="/top-things-to-do-after-installing-ubuntu-the-script/"/>
+    <updated>2013-11-24T00:00:00+01:00</updated>
+    <id>/top-things-to-do-after-installing-ubuntu-the-script</id>
+    <author>
+      <name>Carlo Lobrano</name>
+      <uri>/</uri>
+      <email>c.lobrano@gmail.com</email>
+    </author>
+    <content type="html">
+      
+      &lt;p&gt;At each Ubuntu release lot of articles appear on the Web about &lt;strong&gt;what to do after installing Ubuntu&lt;/strong&gt;. This actually happens for almost all the major Linux distributions, since some tools, libraries or codecs have legal constraints in some countries so their are not shipped with the default GNU Linux distribution.&lt;/p&gt;
+
+&lt;p&gt;Said that most of the &lt;strong&gt;best things to do after installing name-of-your-distribution&lt;/strong&gt; are usually the same all the time, here the engineer’s mind comes to make a &lt;strong&gt;script that sets everything up everytime&lt;/strong&gt; for Ubuntu and derivates&lt;a rel=&quot;nofollow&quot; href=&quot;#footnote1&quot; id=&quot;ref_footnote1&quot;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Here is the link to the &lt;a href=&quot;https://gist.github.com/clobrano/7437551&quot;&gt;GitHub Gist&lt;/a&gt; of the complete script, feel free to leave a comment there.&lt;/p&gt;
+
+&lt;p&gt;The easiest way to make this script was the following&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo apt-get update &amp;amp;&amp;amp; apt-get upgrade
+sudo apt-get install &amp;lt;whatever you want&amp;gt;
+...
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;but:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;It is not even close to a bash scripting exercize (see previous note 1)&lt;/li&gt;
+  &lt;li&gt;What if I don’t want to install a tool, or what if I change from Ubuntu to Kubuntu, from a i386 system to an X86_64…?&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;What I want is &lt;strong&gt;configurability&lt;/strong&gt; and &lt;strong&gt;control&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;configurability&quot;&gt;Configurability&lt;/h2&gt;
+&lt;p&gt;I used a simply &lt;em&gt;select-case&lt;/em&gt; structure to let the user choose whether execute an &lt;code&gt;input function&lt;/code&gt; or not&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;k&quot;&gt;function&lt;/span&gt; prompt
+&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nv&quot;&gt;FUNC&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$1&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;select&lt;/span&gt; choice in &lt;span class=&quot;s2&quot;&gt;&amp;quot;yes&amp;quot;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;no&amp;quot;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;exit&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$choice&lt;/span&gt; in
+            &lt;span class=&quot;s2&quot;&gt;&amp;quot;yes&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+                &lt;span class=&quot;nv&quot;&gt;$FUNC&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$choice&lt;/span&gt;
+                &lt;span class=&quot;nb&quot;&gt;break&lt;/span&gt;
+                &lt;span class=&quot;p&quot;&gt;;;&lt;/span&gt;
+            &lt;span class=&quot;s2&quot;&gt;&amp;quot;no&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+                &lt;span class=&quot;nv&quot;&gt;$FUNC&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$choice&lt;/span&gt;
+                &lt;span class=&quot;nb&quot;&gt;break&lt;/span&gt;
+                &lt;span class=&quot;p&quot;&gt;;;&lt;/span&gt;
+            &lt;span class=&quot;s2&quot;&gt;&amp;quot;exit&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+                &lt;span class=&quot;nb&quot;&gt;exit&lt;/span&gt;
+                &lt;span class=&quot;p&quot;&gt;;;&lt;/span&gt;
+            *&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+                log &lt;span class=&quot;s2&quot;&gt;&amp;quot;Bad reply. Please answer yes/no&amp;quot;&lt;/span&gt;
+                &lt;span class=&quot;p&quot;&gt;;;&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;esac&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;done&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Ok, the action for the choice “yes” and “no” is the same (just passing the choice to the input function), but that was necessary in order to &lt;em&gt;validate&lt;/em&gt; the user reply: if the user replies with “abracadabra” an error message will appear.&lt;/p&gt;
+
+&lt;h2 id=&quot;control&quot;&gt;Control&lt;/h2&gt;
+
+&lt;p&gt;The function passed to the previous function stores the user choice and executes the command to install the tool/program/library.&lt;/p&gt;
+
+&lt;p&gt;For example:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;k&quot;&gt;function&lt;/span&gt; systemUpdate
+&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    log &lt;span class=&quot;s2&quot;&gt;&amp;quot;Update system&amp;quot;&lt;/span&gt;
+    &lt;span class=&quot;nv&quot;&gt;SYS_UPDATE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;SYS_UPDATE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$1&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$SYS_UPDATE&lt;/span&gt; in
+        &lt;span class=&quot;s2&quot;&gt;&amp;quot;to-do&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+            log &lt;span class=&quot;s2&quot;&gt;&amp;quot;Updating System&amp;quot;&lt;/span&gt;
+            execute apt-get update &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; apt-get upgrade
+            &lt;span class=&quot;nv&quot;&gt;SYS_UPDATE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;done&amp;quot;&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;;;&lt;/span&gt;
+        &lt;span class=&quot;s2&quot;&gt;&amp;quot;yes&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;nv&quot;&gt;SYS_UPDATE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;to-do&amp;quot;&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;;;&lt;/span&gt;
+        &lt;span class=&quot;s2&quot;&gt;&amp;quot;no&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+            log &lt;span class=&quot;s2&quot;&gt;&amp;quot;System won&amp;#39;t be updated&amp;quot;&lt;/span&gt;
+            &lt;span class=&quot;nv&quot;&gt;SYS_UPDATE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;not-to-do&amp;quot;&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;;;&lt;/span&gt;
+        &lt;span class=&quot;s2&quot;&gt;&amp;quot;not-to-do&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+            log Nothing to &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;esac&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;the &lt;code&gt;systemUpdate&lt;/code&gt; function stores the user choice in &lt;code&gt;SYS_UPDATE&lt;/code&gt; variable. At the first call &lt;code&gt;SYS_UPDATE&lt;/code&gt; is set with the input argument&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;SYS_UPDATE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;SYS_UPDATE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$1&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;while at all the others calls, the input argument won’t change the &lt;code&gt;SYS_UPDATE&lt;/code&gt; value, that is the function executes what has been chosen the first time.&lt;/p&gt;
+
+&lt;p&gt;In this way the flow of execution is:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Choose what to do = set function’s variable (&lt;strong&gt;configurability&lt;/strong&gt;)&lt;/li&gt;
+  &lt;li&gt;Recap what you choose = print out the function’s variable (&lt;strong&gt;control&lt;/strong&gt;)&lt;/li&gt;
+  &lt;li&gt;Ask whether continue with this choises or not&lt;/li&gt;
+  &lt;li&gt;Execute or exiting according to point 3&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;For the example above, the &lt;code&gt;Main&lt;/code&gt; program will be&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Update the system?&amp;quot;&lt;/span&gt;
+prompt systemUpdate                &lt;span class=&quot;c&quot;&gt;# this will prompt the list &amp;quot;yes, no, exit&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;System update: $SYS_UPDATE&amp;quot;&lt;/span&gt;  &lt;span class=&quot;c&quot;&gt;# This will prompt something like &amp;quot;System Update: to-do&amp;quot;. Here you can interrupt the script&lt;/span&gt;
+systemUpdate                       &lt;span class=&quot;c&quot;&gt;# This will actually execute the update&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;In the bash script there are some other auto-explicative utilities for logging and to determine which is the running system that can be useful to install specific tools (like gnome-tweak-tools or something KDE related)&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;k&quot;&gt;function&lt;/span&gt; isSystem64
+&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;uname -m&lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt; in
+        &lt;span class=&quot;s2&quot;&gt;&amp;quot;x86_64&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;nv&quot;&gt;SYSTEM64&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1
+            &lt;span class=&quot;p&quot;&gt;;;&lt;/span&gt;
+        *&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;nv&quot;&gt;SYSTEM64&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;0
+            &lt;span class=&quot;p&quot;&gt;;;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;esac&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;k&quot;&gt;function&lt;/span&gt; detectDE
+&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt; x&lt;span class=&quot;s2&quot;&gt;&amp;quot;$KDE_FULL_SESSION&amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; x&lt;span class=&quot;s2&quot;&gt;&amp;quot;true&amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;then&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;DE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;kde&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;elif&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt; x&lt;span class=&quot;s2&quot;&gt;&amp;quot;$GNOME_DESKTOP_SESSION_ID&amp;quot;&lt;/span&gt; !&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; x&lt;span class=&quot;s2&quot;&gt;&amp;quot;&amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;then&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;DE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;gnome&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;DE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;unknown
+    &lt;span class=&quot;k&quot;&gt;fi&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;And that’s it, so far.&lt;/p&gt;
+
+&lt;h4 id=&quot;footnotes&quot;&gt;Footnotes&lt;/h4&gt;
+&lt;ol&gt;
+  &lt;li&gt;by the way this was also an exercise of &lt;em&gt;Bash scripting&lt;/em&gt; and the best way for me to take a note of what I need to install and how&lt;a rel=&quot;nofollow&quot; href=&quot;#ref_footnote1&quot; id=&quot;footnote1&quot;&gt;[↩]&lt;/a&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+    </content>
+  </entry>
+  
+  <entry>
+    <title>What Goes Around, Comes Around</title>
+    <link href="/what-goes-around-comes-around/"/>
+    <updated>2013-07-28T00:00:00+02:00</updated>
+    <id>/what-goes-around-comes-around</id>
+    <author>
+      <name>Carlo Lobrano</name>
+      <uri>/</uri>
+      <email>c.lobrano@gmail.com</email>
+    </author>
+    <content type="html">
+      
+      &lt;p&gt;Few weeks ago I begun the &lt;a href=&quot;https://www.udacity.com/&quot;&gt;Udacity&lt;/a&gt;’s course &lt;strong&gt;Software Testing&lt;/strong&gt;. The course covers the basics of software testing (you don’t say? :D) and it is pretty good since there are video lessons and exercises, quizes to put yourself to the test.&lt;/p&gt;
+
+&lt;p&gt;In one of the quizes, as part of a bigger problem (implement the &lt;a href=&quot;http://en.wikipedia.org/wiki/Luhn_algorithm&quot;&gt;Luhn Checksum&lt;/a&gt;&lt;a rel=&quot;nofollow&quot; href=&quot;#footnote1&quot; id=&quot;ref_footnote1&quot;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt; algorithm), I needed to convert an integer number into a list, that is not a big problem actually, but the implementation gave me a little surprise.&lt;/p&gt;
+
+&lt;p&gt;The idea is&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;divide the number by 10&lt;/li&gt;
+  &lt;li&gt;push the decimal part into the list&lt;/li&gt;
+  &lt;li&gt;take the integer part&lt;/li&gt;
+  &lt;li&gt;repeat all until the integer part is over&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The following is the code&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;num2list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;lst&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;10.0&lt;/span&gt;
+        &lt;span class=&quot;c&quot;&gt;# This extracts only the decimal part (e.g. 123.4 - 123 == 0.4)&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;dec&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;round&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;10.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;lst&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dec&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lst&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;__name__&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;#39;__main__&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;num2list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1234&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;surprisingly the result of the test was ‘[1,1,3,4]’. What happened to the number ‘2’?&lt;/p&gt;
+
+&lt;p&gt;To better understand the behavior of the code, I added just one print&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;num2list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;lst&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;10.0&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;dec&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;round&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;10.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;lst&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dec&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;n=&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;%1.1f&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;, round(n)=&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;%1.1f&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;, [(n-round(n)) x 10]=&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;%1.1f&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;, dec=&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;%d&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;
+               &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;round&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;round&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dec&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lst&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[::&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;  &lt;span class=&quot;c&quot;&gt;# This is for reverse the list&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;the following is the new output&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;n=123.4, round(n)=123.0, [(n-round(n)) x 10]=4.0, dec=4
+n=12.3, round(n)=12.0, [(n-round(n)) x 10]=3.0, dec=3
+n=1.2, round(n)=1.0, [(n-round(n)) x 10]=2.0, dec=1
+n=0.1, round(n)=0.0, [(n-round(n)) x 10]=1.0, dec=1
+[1, 1, 3, 4]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Ok I know, the output is not very clear, however we can see that the implementation worked well for each iteration except for the third, when the number ‘2’ was expected to be extracted, and not the number ‘1’. In fact at the third step, when n=1.20, the value of the following expression&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[(n-round(n)) x 10] =
+= [(1.2 - 1.0) * 10.0]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;is equal to ‘2.0’ as expected, but the value of the variable ‘dec’ (just the integer part of the previous result) became ‘1’ out of the blue (or so it seemed)!
+It took me a little time to figure out the problem (basically to be sure that the fault was not in the code), but then I got it: the approximation!
+Actually the debug message prints ‘2.0’ approximating to &lt;strong&gt;the closer value&lt;/strong&gt;, while the actual value is something like 1.9999999999…, so taking only the integer part result in having just ‘1’.
+The fix is to apply the operator ‘int’ to the ‘round’ approximation of ‘[(n-round(n)) x 10], that by definition (see &lt;a href=&quot;http://docs.python.org/2/library/functions.html#round&quot;&gt;here&lt;/a&gt;).&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Values are rounded to the closest multiple of 10&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;so this is the final function&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;num2list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;lst&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;10.0&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;dec&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;round&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;round&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;10.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dec&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;dec&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;abs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dec&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;lst&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dec&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lst&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[::&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;When a non negative check of ‘dec’ has been added to cope with the numbers &amp;gt; 5&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Without the check if n = 1.6
+round(n) = 2.0 (instead of 1.0)
+n - round(n) = -0.4 (instead of 0.6) and dec == 4
+
+With the check since dec is negative (-4)
+dec = 10 - 4 = 6 OK!
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;an alternative would be&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;round&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;dec&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;round&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;...&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;dec&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;round&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;...&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;footnotes&quot;&gt;Footnotes&lt;/h4&gt;
+&lt;ol&gt;
+  &lt;li&gt;The test warned to avoid checking Wikipedia about the Luhn algorithm because in the same page there is a (really better than mine :D) python example &lt;a rel=&quot;nofollow&quot; href=&quot;#ref_footnote1&quot; id=&quot;footnote1&quot;&gt;[↩]&lt;/a&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+    </content>
+  </entry>
+  
+  <entry>
+    <title>Read a file in just one line with Java</title>
+    <link href="/read-a-file-in-just-one-line-in-java/"/>
+    <updated>2013-01-13T00:00:00+01:00</updated>
+    <id>/read-a-file-in-just-one-line-in-java</id>
+    <author>
+      <name>Carlo Lobrano</name>
+      <uri>/</uri>
+      <email>c.lobrano@gmail.com</email>
+    </author>
+    <content type="html">
+      
+      &lt;p&gt;Something I never really liked in Java was the excessive amount of code to just read a file, but finally, starting from Java 1.7 version, there is the following way to do it&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;content&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;newScanner&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;File&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;absoluteFilePath&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)).&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;useDelimiter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;\\Z&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;This piece of code misses some important features, like exceptions management, but it finally makes sense for me.&lt;/p&gt;
+
+&lt;p&gt;The following is a practical example that uses the &lt;a href=&quot;http://docs.oracle.com/javase/tutorial/essential/exceptions/tryResourceClose.html&quot;&gt;try-with-resources&lt;/a&gt; statement to automatically close the opened resource (that comes with Java 1.7 as well) and delegate the exception management to the caller:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;readFileToString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;filePath&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;throws&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;IOException&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;Path&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;path&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Paths&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;filePath&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;try&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Scanner&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;scanner&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Scanner&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;path&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;))&lt;/span&gt;
+	&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;n&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;scanner&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;useDelimiter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;\\A&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+	&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Following is the same behavior implemented with the older version, much longer to write.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;readFileToString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;filePath&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fileContent&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+	&lt;span class=&quot;n&quot;&gt;FileReader&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;file&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+	&lt;span class=&quot;k&quot;&gt;try&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;n&quot;&gt;file&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;FileReader&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;filePath&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+		&lt;span class=&quot;n&quot;&gt;BufferedReader&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;reader&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;BufferedReader&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;file&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+		&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;line&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+		&lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;line&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;reader&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;readLine&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;())&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+			&lt;span class=&quot;n&quot;&gt;fileContent&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;line&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;\n&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+		&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+	&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;catch&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;IOException&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;printStackTrace&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+	&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;finally&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;file&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+			&lt;span class=&quot;k&quot;&gt;try&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+				&lt;span class=&quot;n&quot;&gt;file&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;close&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+			&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;catch&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;IOException&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+				&lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;printStackTrace&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+			&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+		&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+	&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+	&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fileContent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+    </content>
+  </entry>
+  
+  <entry>
+    <title>The std:queue's long memory</title>
+    <link href="/the-std-queue-long-memory/"/>
+    <updated>2013-01-01T00:00:00+01:00</updated>
+    <id>/the-std-queue-long-memory</id>
+    <author>
+      <name>Carlo Lobrano</name>
+      <uri>/</uri>
+      <email>c.lobrano@gmail.com</email>
+    </author>
+    <content type="html">
+      
+      &lt;p&gt;I wrote this just like a note of something unexpected I noticed few days ago.&lt;/p&gt;
+
+&lt;p&gt;The subject of this post is the &lt;a href=&quot;http://www.cplusplus.com/reference/queue/queue/&quot;&gt;C++ std::queue&lt;/a&gt;. It’s usage is pretty simple, it represents a FIFO queue, with standard APIs ‘‘push’’ and ‘‘pop’’ to insert and remove elements, ‘‘front’’ to get the first element from the queue and a ‘‘size’ method to get the number of stored elements (there is also a back API, to get the last, but it does not matter now).&lt;/p&gt;
+
+&lt;h2 id=&quot;the-fact&quot;&gt;The fact&lt;/h2&gt;
+
+&lt;p&gt;What do you expect to receive if you try to get an element from an empty queue?&lt;/p&gt;
+
+&lt;p&gt;Well, the answer here is “it depends”. In fact it depends on the signature of the &lt;code&gt;std::queue::front&lt;/code&gt; method, which is the following:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c--&quot; data-lang=&quot;c++&quot;&gt;&lt;span class=&quot;k&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value_type&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;front&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;const&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;where the ‘‘value_type’’ is the type defined for the container, let’s say an integer.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c--&quot; data-lang=&quot;c++&quot;&gt;&lt;span class=&quot;k&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;front&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;const&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;With this signatore calling ‘‘front’’ from a empty queue we could have a negative value, zero or whatever, but in any case it would be a valid value, that is something that we could have pushed into the queue before, instead of an error value.&lt;/p&gt;
+
+&lt;p&gt;Avoiding any mistake here is pretty simple: test the emptyness of the queue&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c--&quot; data-lang=&quot;c++&quot;&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;myQueue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;empty&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myQueue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;front&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;but just for curiosity what is the actual value returned? It turns out that it returns a value &lt;strong&gt;previously stored and already removed from the queue!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;I wrote this simple test to show what happens :)&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c--&quot; data-lang=&quot;c++&quot;&gt;&lt;span class=&quot;cp&quot;&gt;#include &amp;lt;iostream&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;cp&quot;&gt;#include &amp;lt;queue&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;namespace&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;queue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myQueue&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;queue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+
+    &lt;span class=&quot;n&quot;&gt;cout&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;Queue start size (0 expected) = &amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myQueue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;endl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;cout&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;Queue start front element (0 expected) = &amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myQueue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;front&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;endl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+    &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;base&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;33330000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+    &lt;span class=&quot;cm&quot;&gt;/* Just some normal push and N pop */&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;myQueue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;base&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;myQueue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;cm&quot;&gt;/*&lt;/span&gt;
+&lt;span class=&quot;cm&quot;&gt;     * At this point the size of the queueu is 0 again as expected, BUT if you ask&lt;/span&gt;
+&lt;span class=&quot;cm&quot;&gt;     * for the FRONT element from the queue, you will get one of the values&lt;/span&gt;
+&lt;span class=&quot;cm&quot;&gt;     * previously inserted and already removed!&lt;/span&gt;
+&lt;span class=&quot;cm&quot;&gt;     */&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;cout&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;Queue size (0 expected) = &amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myQueue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;endl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;cout&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;Queue front element (0 expected) = &amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myQueue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;front&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;endl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+    &lt;span class=&quot;cm&quot;&gt;/*&lt;/span&gt;
+&lt;span class=&quot;cm&quot;&gt;     * A sequence of other pop and front will return other values inserted previously&lt;/span&gt;
+&lt;span class=&quot;cm&quot;&gt;     * while the queue becomes an invalid number.&lt;/span&gt;
+&lt;span class=&quot;cm&quot;&gt;     * WARNING: a sequence of pop on an empty queue will cause a segmentation fault :)&lt;/span&gt;
+&lt;span class=&quot;cm&quot;&gt;     */&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;myQueue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;cout&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;Empty queue size after pop (0 expected) = &amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myQueue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;endl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;cout&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;Empty queue front element (0 expected) = &amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myQueue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;front&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;endl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;this is the ouput&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;Queue start size &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; expected&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 0
+Queue start front element &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; expected&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 0
+Queue size &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; expected&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 0
+Queue front element &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; expected&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 33330488
+Empty queue size after pop &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; expected&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 4294967295
+Empty queue front element &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; expected&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 33330490&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+    </content>
+  </entry>
+  
+  
+</feed>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Openshift and SSH Keys • Quantum Leap</title>
+    <meta name="description" content="Since I moved back to Ubuntu-based machines I had some &#8220;problems&#8221; with Openshift application management (I am talking about command line).
+As you can read here, I use Openshift to host this blog and if until I worked on a Fedora machine everything was fine, on Ubuntu-based machines has totally been another story.
+
+">
+    <meta name="keywords" content="openshift, ssh, security">
+    
+    
+    	<!-- Twitter Cards -->
+	<meta name="twitter:title" content="Openshift and SSH Keys">
+	<meta name="twitter:description" content="Since I moved back to Ubuntu-based machines I had some &#8220;problems&#8221; with Openshift application management (I am talking about command line).
+As you can read here, I use Openshift to host this blog and if until I worked on a Fedora machine everything was fine, on Ubuntu-based machines has totally been another story.
+
+">
+	<meta name="twitter:site" content="@https://twitter.com/carlolobrano">
+	<meta name="twitter:creator" content="@https://twitter.com/carlolobrano">
+	
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:image" content="/images/blog.jpg">
+	
+	<!-- Open Graph -->
+	<meta property="og:locale" content="">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="Openshift and SSH Keys">
+	<meta property="og:description" content="Since I moved back to Ubuntu-based machines I had some &#8220;problems&#8221; with Openshift application management (I am talking about command line).
+As you can read here, I use Openshift to host this blog and if until I worked on a Fedora machine everything was fine, on Ubuntu-based machines has totally been another story.
+
+">
+	<meta property="og:url" content="/openshift-and-ssh-keys/">
+	<meta property="og:site_name" content="Quantum Leap">
+
+    <link rel="canonical" href="/openshift-and-ssh-keys/">
+
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Quantum Leap Atom Feed">
+    <link href="/sitemap.xml" type="application/xml" rel="sitemap" title="Sitemap">
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="cleartype" content="on">
+
+    <link rel="stylesheet" href="/css/main.css">
+    <!-- HTML5 Shiv and Media Query Support for IE -->
+    <!--[if lt IE 9]>
+      <script src="/js/vendor/html5shiv.min.js"></script>
+      <script src="/js/vendor/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+
+  <body id="js-body">
+    <!--[if lt IE 9]><div class="upgrade notice-warning"><strong>Your browser is quite old!</strong> Why not <a href="http://whatbrowser.org/">upgrade to a newer one</a> to better enjoy this site?</div><![endif]-->
+
+    <header id="masthead">
+  <div class="inner-wrap">
+    <a href="/" class="site-title">Quantum Leap</a>
+    <nav role="navigation" class="menu top-menu">
+        <ul class="menu-item">
+	<li class="home"><a href="/">Quantum Leap</a></li>
+	
+    
+        
+    
+    <li><a href="/about/" >About</a></li>
+  
+    
+        
+    
+    <li><a href="/archive/" >Archive</a></li>
+  
+</ul>
+    </nav>
+  </div><!-- /.inner-wrap -->
+</header><!-- /.masthead -->
+    <nav role="navigation" id="js-menu" class="sliding-menu-content">
+  <h5>Quantum Leap <span>Table of Contents</span></h5>
+  <ul class="menu-item">
+    <li>
+      <a href="/about/">
+        
+        <div class="title">About</div>
+        <p class="excerpt">About me</p>
+      </a>
+    </li><li>
+      <a href="/archive/">
+        
+        <div class="title">Archive</div>
+        <p class="excerpt">List of articles</p>
+      </a>
+    </li>
+  </ul>
+</nav>
+<button type="button" id="js-menu-trigger" class="sliding-menu-button lines-button x2" role="button" aria-label="Toggle Navigation">
+  <span class="nav-lines"></span>
+</button>
+
+<div id="js-menu-screen" class="menu-screen"></div>
+
+
+    <div id="page-wrapper">
+      <div id="main" role="main">
+	<article class="wrap" itemscope itemtype="http://schema.org/Article">
+		
+		
+		<div class="page-title">
+			<h1>Openshift and SSH Keys</h1>
+		</div>
+		<div class="inner-wrap">
+			<div id="content" class="page-content" itemprop="articleBody">
+				<p>Since I moved back to Ubuntu-based machines I had some “problems” with Openshift application management (I am talking about command line).
+As you can read <a href="/blog/post/1/">here</a>, I use Openshift to host this blog and if until I worked on a Fedora machine everything was fine, on Ubuntu-based machines has totally been another story.</p>
+
+<p><strong>This is totally my fault</strong>, since I never had time/will to check what is wrong whity my usage of <code>rhc</code> client, but I just decided to change that.</p>
+
+<p>The starting point is an application (this blog) already on the server and up and running. If the application has been created to the same machine you are working at the time you want modify something it’s fine, because <code>rhc</code> client created the SSH keys you need (that you <strong>really</strong> need). But what if you changed machine? Well, it turned out to be pretty simple (my bad to have waisted so much time)!</p>
+
+<p><strong>We have two steps</strong></p>
+
+<h2 id="on-client-side">On client side</h2>
+
+<ol>
+  <li>Generate a new pair of ssh keys<a rel="nofollow" href="#footnote1" id="ref_footnote1"><sup>1</sup></a>. I suggest to run the command directly <code>.ssh</code> folder.</li>
+</ol>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ssh</span>-keygen -t rsa -C <span class="s2">&quot;your.email@yourprovider.com&quot;</span></code></pre></div>
+
+<ol>
+  <li>Add your new key to the ssh-agent</li>
+</ol>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ssh</span>-add id_rsa  <span class="c"># id_rsa is the *default* key&#39;s name.</span></code></pre></div>
+
+<ol>
+  <li>[optional] Move your keys into a <code>.ssh</code> subfolder. If and only if you do so, you also need to create a <code>config</code> file to let the ssh client know which keys are for which host.</li>
+</ol>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$mv</span> id_rsa* ~/.ssh/openshift
+<span class="nv">$vim</span> config  <span class="c"># write something like the following</span>
+
+<span class="m">1</span> Host &lt;application-name&gt;.rhcloud.com
+<span class="m">2</span>     Hostname &lt;application-name&gt;.rhcloud.com
+<span class="m">3</span>     PreferredAuthentications publickey
+<span class="m">4</span>     IdentityFile ~/.ssh/openshift/id_rsa
+
+<span class="nv">$sudo</span> service ssh restart  <span class="c"># Let the client know about the changes (I am not sure it is needed).</span></code></pre></div>
+
+<h2 id="on-openshift-side">On Openshift side</h2>
+
+<ol>
+  <li>Go to your application setting page</li>
+  <li>Click on <code>Add a new key...</code> button</li>
+  <li>Copy your <code>~/.ssh/openshift/id_rsa.pub</code> into the given box</li>
+  <li>Test connection: Check <code>Want to log in to your application?</code> link in your application page. Click on it and copy the ssh command, then execute it on your shell, adding the option <strong>-vvv</strong></li>
+</ol>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>ssh -vvv ...</code></pre></div>
+
+<p>The following line should appear</p>
+
+<pre><code>debug1: Offering RSA public key: &lt;your-home&gt;/.ssh/openshift/id_rsa
+</code></pre>
+
+<p>and you’ll be logged into your application. Just type <code>exit</code> before do something wrong :)</p>
+
+<p>And that’s it! I can now clone and modify and the rest.</p>
+
+<h4 id="references">References</h4>
+
+<ul>
+  <li><a href="https://help.github.com/articles/generating-ssh-keys">GitHub Help</a></li>
+</ul>
+
+<h4 id="footnotes">Footnotes</h4>
+<ol>
+  <li>You are supposed to already have a pair of files named <em>id_rsa</em> on your <code>.ssh</code> folder. If your <code>id_rsa.pub</code> file is something like <code>ssh-rsa</code> followed by a bunch of characters, you can use that whithout generating a new pair.<a rel="nofollow" href="#ref_footnote1" id="footnote1">[↩]</a>.</li>
+</ol>
+
+				<hr />
+				<footer class="page-footer">
+					
+
+
+<div class="author-image">
+	<img src="/images/bio-photo.jpg" alt="Carlo Lobrano">
+</div><!-- ./author-image -->
+<div class="author-content">
+	<h3 class="author-name" >Written by <span itemprop="author">Carlo Lobrano</span></h3>
+	<p class="author-bio"></p>
+</div><!-- ./author-content -->
+					<div class="inline-btn">
+	<a class="btn-social twitter" href="https://twitter.com/intent/tweet?text=Openshift%20and%20SSH%20Keys&amp;url=/openshift-and-ssh-keys/&amp;via=https://twitter.com/carlolobrano" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> Share on Twitter</a>
+	<a class="btn-social facebook" href="https://www.facebook.com/sharer/sharer.php?u=/openshift-and-ssh-keys/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i> Share on Facebook</a>
+	<a class="btn-social google-plus"  href="https://plus.google.com/share?url=/openshift-and-ssh-keys/" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i> Share on Google+</a>
+</div><!-- /.share-this -->
+					<div class="page-meta">
+	<p>Updated <time datetime="2014-06-08T00:00:00Z" itemprop="datePublished">June 08, 2014</time></p>
+</div><!-- /.page-meta -->
+				</footer><!-- /.footer -->
+				<aside>
+					
+				</aside>
+			</div><!-- /.content -->
+		</div><!-- /.inner-wrap -->
+		
+	</article><!-- ./wrap -->
+</div><!-- /#main -->
+
+      <footer role="contentinfo" id="site-footer">
+	<nav role="navigation" class="menu bottom-menu">
+		<ul class="menu-item">
+		
+      
+        
+      
+			<li><a href="" ></a></li>
+		
+		</ul>
+	</nav><!-- /.bottom-menu -->
+	<p class="copyright">&#169; 2015 <a href="">Quantum Leap</a> powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> + <a href="http://mmistakes.github.io/skinny-bones-jekyll/" rel="nofollow">Skinny Bones</a>.</p>
+</footer>
+    </div>
+
+    <script src="/js/vendor/jquery-1.9.1.min.js"></script>
+    <script src="/js/main.js"></script>
+
+  </body>
+
+</html>

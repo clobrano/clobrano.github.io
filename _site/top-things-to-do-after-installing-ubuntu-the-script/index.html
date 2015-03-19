@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Top Things to Do After Installing Ubuntu. the Script • Quantum Leap</title>
+    <meta name="description" content="At each Ubuntu release lot of articles appear on the Web about what to do after installing Ubuntu. This actually happens for almost all the major Linux distributions, since some tools, libraries or codecs have legal constraints in some countries so their are not shipped with the default GNU Linux distribution.
+
+">
+    <meta name="keywords" content="scripting, ubuntu">
+    
+    
+    	<!-- Twitter Cards -->
+	<meta name="twitter:title" content="Top Things to Do After Installing Ubuntu. the Script">
+	<meta name="twitter:description" content="At each Ubuntu release lot of articles appear on the Web about what to do after installing Ubuntu. This actually happens for almost all the major Linux distributions, since some tools, libraries or codecs have legal constraints in some countries so their are not shipped with the default GNU Linux distribution.
+
+">
+	<meta name="twitter:site" content="@https://twitter.com/carlolobrano">
+	<meta name="twitter:creator" content="@https://twitter.com/carlolobrano">
+	
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:image" content="/images/blog.jpg">
+	
+	<!-- Open Graph -->
+	<meta property="og:locale" content="">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="Top Things to Do After Installing Ubuntu. the Script">
+	<meta property="og:description" content="At each Ubuntu release lot of articles appear on the Web about what to do after installing Ubuntu. This actually happens for almost all the major Linux distributions, since some tools, libraries or codecs have legal constraints in some countries so their are not shipped with the default GNU Linux distribution.
+
+">
+	<meta property="og:url" content="/top-things-to-do-after-installing-ubuntu-the-script/">
+	<meta property="og:site_name" content="Quantum Leap">
+
+    <link rel="canonical" href="/top-things-to-do-after-installing-ubuntu-the-script/">
+
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Quantum Leap Atom Feed">
+    <link href="/sitemap.xml" type="application/xml" rel="sitemap" title="Sitemap">
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="cleartype" content="on">
+
+    <link rel="stylesheet" href="/css/main.css">
+    <!-- HTML5 Shiv and Media Query Support for IE -->
+    <!--[if lt IE 9]>
+      <script src="/js/vendor/html5shiv.min.js"></script>
+      <script src="/js/vendor/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+
+  <body id="js-body">
+    <!--[if lt IE 9]><div class="upgrade notice-warning"><strong>Your browser is quite old!</strong> Why not <a href="http://whatbrowser.org/">upgrade to a newer one</a> to better enjoy this site?</div><![endif]-->
+
+    <header id="masthead">
+  <div class="inner-wrap">
+    <a href="/" class="site-title">Quantum Leap</a>
+    <nav role="navigation" class="menu top-menu">
+        <ul class="menu-item">
+	<li class="home"><a href="/">Quantum Leap</a></li>
+	
+    
+        
+    
+    <li><a href="/about/" >About</a></li>
+  
+    
+        
+    
+    <li><a href="/archive/" >Archive</a></li>
+  
+</ul>
+    </nav>
+  </div><!-- /.inner-wrap -->
+</header><!-- /.masthead -->
+    <nav role="navigation" id="js-menu" class="sliding-menu-content">
+  <h5>Quantum Leap <span>Table of Contents</span></h5>
+  <ul class="menu-item">
+    <li>
+      <a href="/about/">
+        
+        <div class="title">About</div>
+        <p class="excerpt">About me</p>
+      </a>
+    </li><li>
+      <a href="/archive/">
+        
+        <div class="title">Archive</div>
+        <p class="excerpt">List of articles</p>
+      </a>
+    </li>
+  </ul>
+</nav>
+<button type="button" id="js-menu-trigger" class="sliding-menu-button lines-button x2" role="button" aria-label="Toggle Navigation">
+  <span class="nav-lines"></span>
+</button>
+
+<div id="js-menu-screen" class="menu-screen"></div>
+
+
+    <div id="page-wrapper">
+      <div id="main" role="main">
+	<article class="wrap" itemscope itemtype="http://schema.org/Article">
+		
+		
+		<div class="page-title">
+			<h1>Top Things to Do After Installing Ubuntu. the Script</h1>
+		</div>
+		<div class="inner-wrap">
+			<div id="content" class="page-content" itemprop="articleBody">
+				<p>At each Ubuntu release lot of articles appear on the Web about <strong>what to do after installing Ubuntu</strong>. This actually happens for almost all the major Linux distributions, since some tools, libraries or codecs have legal constraints in some countries so their are not shipped with the default GNU Linux distribution.</p>
+
+<p>Said that most of the <strong>best things to do after installing name-of-your-distribution</strong> are usually the same all the time, here the engineer’s mind comes to make a <strong>script that sets everything up everytime</strong> for Ubuntu and derivates<a rel="nofollow" href="#footnote1" id="ref_footnote1"><sup>1</sup></a>.</p>
+
+<p>Here is the link to the <a href="https://gist.github.com/clobrano/7437551">GitHub Gist</a> of the complete script, feel free to leave a comment there.</p>
+
+<p>The easiest way to make this script was the following</p>
+
+<pre><code>sudo apt-get update &amp;&amp; apt-get upgrade
+sudo apt-get install &lt;whatever you want&gt;
+...
+</code></pre>
+
+<p>but:</p>
+
+<ol>
+  <li>It is not even close to a bash scripting exercize (see previous note 1)</li>
+  <li>What if I don’t want to install a tool, or what if I change from Ubuntu to Kubuntu, from a i386 system to an X86_64…?</li>
+</ol>
+
+<p>What I want is <strong>configurability</strong> and <strong>control</strong>.</p>
+
+<h2 id="configurability">Configurability</h2>
+<p>I used a simply <em>select-case</em> structure to let the user choose whether execute an <code>input function</code> or not</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="k">function</span> prompt
+<span class="o">{</span>
+    <span class="nv">FUNC</span><span class="o">=</span><span class="nv">$1</span>
+    <span class="k">select</span> choice in <span class="s2">&quot;yes&quot;</span> <span class="s2">&quot;no&quot;</span> <span class="s2">&quot;exit&quot;</span><span class="p">;</span> <span class="k">do</span>
+        <span class="k">case</span> <span class="nv">$choice</span> in
+            <span class="s2">&quot;yes&quot;</span><span class="o">)</span>
+                <span class="nv">$FUNC</span> <span class="nv">$choice</span>
+                <span class="nb">break</span>
+                <span class="p">;;</span>
+            <span class="s2">&quot;no&quot;</span><span class="o">)</span>
+                <span class="nv">$FUNC</span> <span class="nv">$choice</span>
+                <span class="nb">break</span>
+                <span class="p">;;</span>
+            <span class="s2">&quot;exit&quot;</span><span class="o">)</span>
+                <span class="nb">exit</span>
+                <span class="p">;;</span>
+            *<span class="o">)</span>
+                log <span class="s2">&quot;Bad reply. Please answer yes/no&quot;</span>
+                <span class="p">;;</span>
+        <span class="k">esac</span>
+    <span class="k">done</span>
+<span class="o">}</span></code></pre></div>
+
+<p>Ok, the action for the choice “yes” and “no” is the same (just passing the choice to the input function), but that was necessary in order to <em>validate</em> the user reply: if the user replies with “abracadabra” an error message will appear.</p>
+
+<h2 id="control">Control</h2>
+
+<p>The function passed to the previous function stores the user choice and executes the command to install the tool/program/library.</p>
+
+<p>For example:</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="k">function</span> systemUpdate
+<span class="o">{</span>
+    log <span class="s2">&quot;Update system&quot;</span>
+    <span class="nv">SYS_UPDATE</span><span class="o">=</span><span class="k">${</span><span class="nv">SYS_UPDATE</span><span class="p">:=</span><span class="nv">$1</span><span class="k">}</span>
+
+    <span class="k">case</span> <span class="nv">$SYS_UPDATE</span> in
+        <span class="s2">&quot;to-do&quot;</span><span class="o">)</span>
+            log <span class="s2">&quot;Updating System&quot;</span>
+            execute apt-get update <span class="o">&amp;&amp;</span> apt-get upgrade
+            <span class="nv">SYS_UPDATE</span><span class="o">=</span><span class="s2">&quot;done&quot;</span>
+            <span class="p">;;</span>
+        <span class="s2">&quot;yes&quot;</span><span class="o">)</span>
+            <span class="nv">SYS_UPDATE</span><span class="o">=</span><span class="s2">&quot;to-do&quot;</span>
+            <span class="p">;;</span>
+        <span class="s2">&quot;no&quot;</span><span class="o">)</span>
+            log <span class="s2">&quot;System won&#39;t be updated&quot;</span>
+            <span class="nv">SYS_UPDATE</span><span class="o">=</span><span class="s2">&quot;not-to-do&quot;</span>
+            <span class="p">;;</span>
+        <span class="s2">&quot;not-to-do&quot;</span><span class="o">)</span>
+            log Nothing to <span class="k">do</span>
+    <span class="k">esac</span>
+<span class="o">}</span></code></pre></div>
+
+<p>the <code>systemUpdate</code> function stores the user choice in <code>SYS_UPDATE</code> variable. At the first call <code>SYS_UPDATE</code> is set with the input argument</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">SYS_UPDATE</span><span class="o">=</span><span class="k">${</span><span class="nv">SYS_UPDATE</span><span class="p">:=</span><span class="nv">$1</span><span class="k">}</span></code></pre></div>
+
+<p>while at all the others calls, the input argument won’t change the <code>SYS_UPDATE</code> value, that is the function executes what has been chosen the first time.</p>
+
+<p>In this way the flow of execution is:</p>
+
+<ol>
+  <li>Choose what to do = set function’s variable (<strong>configurability</strong>)</li>
+  <li>Recap what you choose = print out the function’s variable (<strong>control</strong>)</li>
+  <li>Ask whether continue with this choises or not</li>
+  <li>Execute or exiting according to point 3</li>
+</ol>
+
+<p>For the example above, the <code>Main</code> program will be</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">echo</span> <span class="s2">&quot;Update the system?&quot;</span>
+prompt systemUpdate                <span class="c"># this will prompt the list &quot;yes, no, exit&quot;</span>
+<span class="nb">echo</span> <span class="s2">&quot;System update: $SYS_UPDATE&quot;</span>  <span class="c"># This will prompt something like &quot;System Update: to-do&quot;. Here you can interrupt the script</span>
+systemUpdate                       <span class="c"># This will actually execute the update</span></code></pre></div>
+
+<p>In the bash script there are some other auto-explicative utilities for logging and to determine which is the running system that can be useful to install specific tools (like gnome-tweak-tools or something KDE related)</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="k">function</span> isSystem64
+<span class="o">{</span>
+    <span class="k">case</span> <span class="sb">`</span>uname -m<span class="sb">`</span> in
+        <span class="s2">&quot;x86_64&quot;</span><span class="o">)</span>
+            <span class="nv">SYSTEM64</span><span class="o">=</span>1
+            <span class="p">;;</span>
+        *<span class="o">)</span>
+            <span class="nv">SYSTEM64</span><span class="o">=</span>0
+            <span class="p">;;</span>
+    <span class="k">esac</span>
+<span class="o">}</span></code></pre></div>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="k">function</span> detectDE
+<span class="o">{</span>
+    <span class="k">if</span> <span class="o">[</span> x<span class="s2">&quot;$KDE_FULL_SESSION&quot;</span> <span class="o">=</span> x<span class="s2">&quot;true&quot;</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span> <span class="nv">DE</span><span class="o">=</span>kde<span class="p">;</span>
+    <span class="k">elif</span> <span class="o">[</span> x<span class="s2">&quot;$GNOME_DESKTOP_SESSION_ID&quot;</span> !<span class="o">=</span> x<span class="s2">&quot;&quot;</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span> <span class="nv">DE</span><span class="o">=</span>gnome<span class="p">;</span>
+    <span class="k">else</span> <span class="nv">DE</span><span class="o">=</span>unknown
+    <span class="k">fi</span>
+<span class="o">}</span></code></pre></div>
+
+<p>And that’s it, so far.</p>
+
+<h4 id="footnotes">Footnotes</h4>
+<ol>
+  <li>by the way this was also an exercise of <em>Bash scripting</em> and the best way for me to take a note of what I need to install and how<a rel="nofollow" href="#ref_footnote1" id="footnote1">[↩]</a>.</li>
+</ol>
+
+
+				<hr />
+				<footer class="page-footer">
+					
+
+
+<div class="author-image">
+	<img src="/images/bio-photo.jpg" alt="Carlo Lobrano">
+</div><!-- ./author-image -->
+<div class="author-content">
+	<h3 class="author-name" >Written by <span itemprop="author">Carlo Lobrano</span></h3>
+	<p class="author-bio"></p>
+</div><!-- ./author-content -->
+					<div class="inline-btn">
+	<a class="btn-social twitter" href="https://twitter.com/intent/tweet?text=Top%20Things%20to%20Do%20After%20Installing%20Ubuntu.%20the%20Script&amp;url=/top-things-to-do-after-installing-ubuntu-the-script/&amp;via=https://twitter.com/carlolobrano" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> Share on Twitter</a>
+	<a class="btn-social facebook" href="https://www.facebook.com/sharer/sharer.php?u=/top-things-to-do-after-installing-ubuntu-the-script/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i> Share on Facebook</a>
+	<a class="btn-social google-plus"  href="https://plus.google.com/share?url=/top-things-to-do-after-installing-ubuntu-the-script/" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i> Share on Google+</a>
+</div><!-- /.share-this -->
+					<div class="page-meta">
+	<p>Updated <time datetime="2013-11-24T00:00:00Z" itemprop="datePublished">November 24, 2013</time></p>
+</div><!-- /.page-meta -->
+				</footer><!-- /.footer -->
+				<aside>
+					
+				</aside>
+			</div><!-- /.content -->
+		</div><!-- /.inner-wrap -->
+		
+	</article><!-- ./wrap -->
+</div><!-- /#main -->
+
+      <footer role="contentinfo" id="site-footer">
+	<nav role="navigation" class="menu bottom-menu">
+		<ul class="menu-item">
+		
+      
+        
+      
+			<li><a href="" ></a></li>
+		
+		</ul>
+	</nav><!-- /.bottom-menu -->
+	<p class="copyright">&#169; 2015 <a href="">Quantum Leap</a> powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> + <a href="http://mmistakes.github.io/skinny-bones-jekyll/" rel="nofollow">Skinny Bones</a>.</p>
+</footer>
+    </div>
+
+    <script src="/js/vendor/jquery-1.9.1.min.js"></script>
+    <script src="/js/main.js"></script>
+
+  </body>
+
+</html>
