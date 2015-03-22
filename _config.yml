@@ -3,7 +3,7 @@
 title: Quantum Leap
 description:
 logo: blog.jpg # 120x120 px default image used for Twitter summary card
-teaser: blog.jpg # 400x250 px default teaser image used in image archive grid
+teaser: line-teaser.jpg # 400x250 px default teaser image used in image archive grid
 locale:
 url:
 
