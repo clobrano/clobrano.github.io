@@ -11,8 +11,5 @@ image:
 ads: false
 ---
 
-## Who am I?
-
-I work as Software Engineer in [Cagliari](http://en.wikipedia.org/wiki/Cagliari) - Italy, in the **Internet of Things** field, I like Linux, automation, scripting and LEGO.
-You can also find me on [GitHub](https://github.com/clobrano), [LinkedIn](http://www.linkedin.com/pub/carlo-lobrano/21/235/694/en) and [Twitter](https://twitter.com/carlolobrano).
+I am Carlo Lobrano, Electronic Engineer, passionate in programming, software automation and artificial intelligence. You can find me also on [Twitter](https://twitter.com/carlolobrano), [LinkedIn](http://www.linkedin.com/pub/carlo-lobrano/21/235/694/en) and [Github](https://github.com/clobrano)
 
