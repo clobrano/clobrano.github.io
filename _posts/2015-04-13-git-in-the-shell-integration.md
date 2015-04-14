@@ -20,3 +20,18 @@ published: false
     - informative prompt and branch
     - aliases
     - ghistory
+
+Initially I wanted to write a long article about Git, how useful it is, at 10 years since its creation, but then I thought that in the end there are lots of articles out there that say the same thing and that I was not adding that much. My contribute, instead, will be about how I integrate it in my workflow, hoping that it could help someone.
+
+I work mainly under Linux and so the Shell is my helm. I was used to work with [Bash]() as it is the default Shell in all the GNU/Linux distributions I worked with, and the only modding I used was a list of **aliases** like the following:
+
+    alias gs='git status'
+    alias gdif='git diff -w'
+
+and above all my customized **git history**
+
+    alias gh='git log --decorate --oneline --graph --all --date=short --pretty=format:"%C(auto)%d%Creset %C(auto)%h%Creset - %C(cyan)%an%Creset %Cgreen(%ad)%Creset : %s" '
+
+which I prefere respect a `git log` and looks like this
+
+    [insert image here]
