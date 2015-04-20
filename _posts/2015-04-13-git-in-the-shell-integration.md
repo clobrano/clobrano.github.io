@@ -142,4 +142,4 @@ In this post I summarized the simple and productive Shell environment I configur
 
 
 #### Footnotes
-1. Yes, I know, I could do that on Bash, too, I guess. <a rel="nofollow" href="#ref_footnote1" id="footnote1">[↩]</a>.
+1. Yes, I know, I could do that on Bash, too, I guess, but not the rest, keep reading ;) <a rel="nofollow" href="#ref_footnote1" id="footnote1">[↩]</a>.
