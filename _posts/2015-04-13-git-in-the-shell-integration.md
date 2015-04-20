@@ -2,8 +2,9 @@
 layout: article
 title: Git in the Shell. Integration
 tags: [Git, Shell]
-published: false
+published: true
 ---
+
 Initially, I wanted to write a long article about [**GIT**](http://git-scm.com/), how useful it is - [at 10 years since its creation](https://www.atlassian.com/git/articles/10-years-of-git/) - and *blah blah blah*, but then I thought that there are alrady [lots of articles out there saying pretty much the same thing](https://www.google.it/search?client=ubuntu&hs=6Sm&channel=fs&q=git+how+to&oq=git+how+to&gs_l=serp.3...9121.9812.0.10076.7.6.0.0.0.0.0.0..0.0.msedr...0...1c.1.64.serp..7.0.0.vaBWCreLahE) and that I was not adding that much. My contribute, instead, will be about how I integrate it in my workflow, hoping that it could help someone.
 
 I work mainly under Linux and so the Shell is my helm. Working in a Shell, I think there are **3 important things** you need to have **clear under your sight**:
@@ -134,27 +135,11 @@ RPROMPT='$(_prompt_git_status) %2c %F{yellow} %T%f'
 {% endhighlight %}
 
 
+### Conclusion
+
+In this post I summarized the simple and productive Shell environment I configured using ZSH for normal work and for work with GIT, having under my sight all the information I need without using any command/function. For sure I will add other info to my prompt in the future, but to complete the post I would suggest to **avoid adding to much functions to ZSH prompt**. Those function are executed every time you press return, so it is better if they are not time expensive or, even worst, blocking.
+
+
 
 #### Footnotes
 1. Yes, I know, I could do that on Bash, too, I guess. <a rel="nofollow" href="#ref_footnote1" id="footnote1">[↩]</a>.
-
-
-
-
-[Ten years ago Git was created](https://www.atlassian.com/git/articles/10-years-of-git/). Personally I only started using Git a couple of years ago, after one more year of experience with SVN, but I was a big change.
-
-* how I worked with GIT (cool, various, low responsability)
-    - Git is confortable. There is so much space for try and error without risk of compromising the entire project that the pressure is quite low and I liked that very much, above all at the beginning. The other aspect I appreciate is that the command-line tool is effective enough to avoid using GUI tools (see **aliases** section).
-* how much time I spent in Git and shell
-    - My Shell is my helm and I usually spent a lot of time both in Shell and GIT, so I need a good way to import information like **branch** and **tag** in my command shell.
-* what I don't like in bash, the too long prompt when going down the path (and the fact that I prefer deep paths respect wide paths)
-    - Default Shell in Linux is usually bash.
-* Solution: Zsh and double prompt.
-* Minimal prompt and...
-* Fully informative prompt (that can disappear) for all the rest
-* Git integration
-    - informative prompt and branch
-    - aliases
-    - ghistory
-
-
