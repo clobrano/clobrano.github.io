@@ -1,7 +1,7 @@
 # Site wide configuration
 
 title: Quantum Leap
-description:
+description: Smart Tools and Automation
 logo: blog.jpg # 120x120 px default image used for Twitter summary card
 teaser: line-teaser.jpg # 400x250 px default teaser image used in image archive grid
 locale:
