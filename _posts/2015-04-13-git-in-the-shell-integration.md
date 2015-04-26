@@ -2,6 +2,7 @@
 layout: article
 title: Git in the Shell. Integration
 tags: [Git, Shell]
+date: 2015-04-20
 published: true
 ---
 
