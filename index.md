@@ -1,7 +1,7 @@
 ---
 layout: archive
 permalink: /
-title: "Latest Posts"
+title: "Programming, Automation and Personal Improvement"
 ---
 
 <div class="tiles">
@@ -9,5 +9,3 @@ title: "Latest Posts"
 	{% include post-grid.html %}
 {% endfor %}
 </div><!-- /.tiles -->
-
-

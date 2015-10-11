@@ -3,8 +3,13 @@ layout: article
 title: "Testing: Library, tell me what I want to hear!"
 tags: [testing, ]
 date: 2015-05-04 00:00
+image:
+  teaser: listen.jpg
+  feature: listen.jpg
+  credit: http://kingstheology.org
 published: true
 ---
+
 
 Programming is an activity that presents often the same problems, so that as the time passes you can see if you are improving your experience or not.
 

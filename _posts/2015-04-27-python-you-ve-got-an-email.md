@@ -3,6 +3,9 @@ layout: article
 title: Python, you've got an e-mail
 tags: [python, ]
 date: 2015-04-27 00:00
+image:
+    teaser: python-email2.jpg
+    feature: python-email2.jpg
 published: true
 ---
 
@@ -21,6 +24,8 @@ The only important thing here is **getting notified about new e-mails**. Again, 
 I had got no much time to spend developing a new notifier, so I choose to write it in Python, that provides the [imaplib](https://docs.python.org/2/library/imaplib.html) module to manage IMAP4 protocol.
 
 The basic steps are the following:
+
+{% include toc.html %}
 
 Connection
 ----------

@@ -5,8 +5,8 @@ modified:
 categories:
 tags: [thoughts]
 image:
-  feature:
-  teaser:
+  feature: remote.jpg
+  teaser: remote.jpg
   thumb:
 ---
 
