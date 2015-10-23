@@ -9,13 +9,19 @@ image:
   teaser: safe1024x420.jpg
   feature: safe1024x420.jpg
   credit: https://pixabay.com/en/safe-vault-steel-door-banking-913452/
-published: false
+published: true
 ---
 
-I read a blog post yesterday that is only the last example of a bad practice I saw often: disable authentication/security in applications because it is annoying to type the password every time. My point of view in those cases is **do not do it**. Not just because there is a reason to have such security layer - which is true BTW -, but because there are at least 2 better solutions:
+*Disclaimer (sort of): here I am talking from a Software developer point of view AND about open source projects, which is true in most of the cases where I saw the behavior I am about to describe.*
 
-1. The application provide an automatic authentication method, usually through GPG keys or encripted files
-2. If the application does not provide it, you have a chance to contribute to the project in a really valuable way!
+I read a blog post yesterday that is only the last example of a bad practice I saw often: **disabling authentication/security in applications** only because it is annoying to type the password "every time". My point of view in those cases is **do not do it**. Not just because there is a reason to have such security layer - which is true BTW -, but because there are at least two better solutions (and I will give you three):
 
-Of course here I am talking about open source projects, but most of the time that is the case of those tutorials/guides.
+**It might be a bug**. In that case, the right thing to do would be to open a ticket in the bugtrace and the brilliant thing to do would be to fix that bug.
+
+**The application already provides an automatic authentication method**. [OpenPGP](http://www.openpgp.org/) keys (GPG, PGP, and the likes), encrypted password files and a lot of other things (really fashinating some [proximity sensor based mechanisms](http://www.wired.com/wiredinsider/2014/11/unlock-your-passwords-with-your-proximity/) for example) might be available and the worst thing here is that I am not learning how to use those important technologies if I just "hack" the software security.
+
+If the application does not provide anything like above. This is similar to point 1, I have a **great opportunity to contribute to the project** in a really valuable way!
+
+Hacking, when legal, is good to learn new things, but sometimes it is not the right solution.
+
 
