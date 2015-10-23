@@ -1,0 +1,333 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Git in the Shell. Integration &#8211; Quantum Leap</title>
+<meta name="description" content="No real need for Git GUI, all you need is a SHELL">
+<meta name="keywords" content="Git, Bash">
+
+
+
+<!-- Twitter Cards -->
+<meta name="twitter:title" content="Git in the Shell. Integration">
+<meta name="twitter:description" content="No real need for Git GUI, all you need is a SHELL">
+<meta name="twitter:site" content="@carlolobrano">
+<meta name="twitter:creator" content="@carlolobrano">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://localhost:4000/images/site-logo.png">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Git in the Shell. Integration">
+<meta property="og:description" content="No real need for Git GUI, all you need is a SHELL">
+<meta property="og:url" content="http://localhost:4000/articles/git-in-the-shell-integration/">
+<meta property="og:site_name" content="Quantum Leap">
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/articles/git-in-the-shell-integration/">
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Quantum Leap Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+<!-- Webfonts -->
+<script src="https://use.edgefonts.net/source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9;source-code-pro:n4,n7;volkhov.js"></script>
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- HTML5 Shiv and Media Query Support -->
+<!--[if lt IE 9]>
+  <script src="http://localhost:4000/assets/js/vendor/html5shiv.min.js"></script>
+  <script src="http://localhost:4000/assets/js/vendor/respond.min.js"></script>
+<![endif]-->
+
+<!-- Modernizr -->
+<script src="http://localhost:4000/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+
+
+<!-- MathJax -->
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="http://localhost:4000/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="http://localhost:4000/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="http://localhost:4000/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://localhost:4000/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://localhost:4000/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:4000/images/apple-touch-icon-144x144-precomposed.png">
+
+</head>
+
+<body id="post">
+
+<div class="navigation-wrapper">
+	<nav role="navigation" id="site-nav" class="animated drop">
+	    <ul>
+      
+		    
+		        
+		    
+		    <li><a href="http://localhost:4000/about/" >About</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="http://localhost:4000/articles/" >Articles</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="http://localhost:4000/blog/" >Blog</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="http://localhost:4000/tags/" >Tags</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="http://localhost:4000/search/" >Search</a></li>
+		  
+	    </ul>
+	</nav>
+</div><!-- /.navigation-wrapper -->
+
+<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+
+<header class="masthead">
+	<div class="wrap">
+      
+  		<a href="http://localhost:4000/" class="site-logo" rel="home" title="Quantum Leap"><img src="http://localhost:4000/images/site-logo.png" width="200" height="200" alt="Quantum Leap logo" class="animated fadeInDown"></a>
+      
+      <h1 class="site-title animated fadeIn"><a href="http://localhost:4000/">Quantum Leap</a></h1>
+		<h2 class="site-description animated fadeIn" itemprop="description">Development, Smart Tools and Automation</h2>
+	</div>
+</header><!-- /.masthead -->
+
+<div class="js-menu-screen menu-screen"></div>
+
+
+<div id="main" role="main">
+  <article class="hentry">
+    
+    <div class="entry-wrapper">
+      <header class="entry-header">
+        <span class="entry-tags"><a href="http://localhost:4000/tags/#Git" title="Pages tagged Git">Git</a>&nbsp;&bull;&nbsp;<a href="http://localhost:4000/tags/#Bash" title="Pages tagged Bash">Bash</a></span>
+        
+          <h1 class="entry-title">Git in the Shell. Integration</h1>
+        
+      </header>
+      <footer class="entry-meta">
+        
+        
+        
+          <img src="http://localhost:4000/images/bio-photo.jpg" class="bio-photo" alt="Carlo Lobrano bio photo"></a>
+        
+        <span class="author vcard">By <span class="fn">Carlo Lobrano</span></span>
+        <span class="entry-date date published"><time datetime="2015-04-20T00:00:00+02:00"><i class="fa fa-calendar-o"></i> April 20, 2015</time></span>
+        
+        
+        
+        
+      </footer>
+      <div class="entry-content">
+        <p>Initially, I wanted to write a long article about <a href="http://git-scm.com/"><strong>GIT</strong></a>, how useful it is - <a href="https://www.atlassian.com/git/articles/10-years-of-git/">at 10 years since its creation</a> - and <em>blah blah blah</em>, but then I thought that there are alrady <a href="https://www.google.it/search?client=ubuntu&amp;hs=6Sm&amp;channel=fs&amp;q=git+how+to&amp;oq=git+how+to&amp;gs_l=serp.3...9121.9812.0.10076.7.6.0.0.0.0.0.0..0.0.msedr...0...1c.1.64.serp..7.0.0.vaBWCreLahE">lots of articles out there saying pretty much the same thing</a> and that I was not adding that much. My contribute, instead, will be about how I integrate it in my workflow, hoping that it could help someone.</p>
+
+<p>I work mainly under Linux and so the Shell is my helm. Working in a Shell, I think there are <strong>3 important things</strong> you need to have <strong>clear under your sight</strong>:</p>
+
+<ol>
+  <li><strong>Who you are</strong>: that is, whether are you a normal user, or <strong>root</strong>.</li>
+  <li><strong>Where you are</strong>: the working directory.</li>
+  <li><strong>What you are working on</strong>.</li>
+</ol>
+
+<p>For the latter, the second point is normally sufficient, but if I am working on a project with revision control, let’s say GIT, I need other information:</p>
+
+<ol>
+  <li>Current branch</li>
+  <li>Most recent Tag</li>
+  <li>Whether there are uncommitted modifications or not</li>
+  <li>Stashed changes (Git only, I guess).</li>
+</ol>
+
+<p>I used to work with <a href="https://www.gnu.org/software/bash/">Bash</a>, as it is the default Shell in all the GNU/Linux distributions I worked with, and the only trick I used at the beginning was a list of <strong>aliases</strong> (in <code>.basrh</code> configuration file) to save some time typing the most common GIT commands:</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">alias </span><span class="nv">ga</span><span class="o">=</span><span class="s1">&#39;git add -u&#39;</span>       <span class="c"># use it with caution</span>
+<span class="nb">alias </span><span class="nv">gb</span><span class="o">=</span><span class="s1">&#39;git branch&#39;</span>
+<span class="nb">alias </span><span class="nv">gd</span><span class="o">=</span><span class="s1">&#39;git diff -w&#39;</span>      <span class="c"># -w: ignore whitespace</span>
+<span class="nb">alias </span><span class="nv">ghistory</span><span class="o">=</span><span class="s1">&#39;git log --decorate --oneline --graph --all --date=short --pretty=format:&quot;%C(auto)%d%Creset %C(auto)%h%Creset - %C(cyan)%an%Creset %Cgreen(%ad)%Creset : %s&quot; &#39;</span>
+<span class="nb">alias </span><span class="nv">gs</span><span class="o">=</span><span class="s1">&#39;git stash list&#39;</span>
+<span class="nb">alias </span><span class="nv">gs</span><span class="o">=</span><span class="s1">&#39;git status&#39;</span></code></pre></div>
+
+<p><strong>ghistory</strong> (which is actually <code>gh</code>, I wrote here <code>ghistory</code> to make it clear what it means) is my preferred and looks like this (local branches are in green, remotes one in red):</p>
+
+<p><img src="/images/bash-ghistory.png" alt="ghistory" /></p>
+
+<p>So far nothing special actually, then I heard of <a href="http://zsh.sourceforge.net/"><strong>Zsh</strong></a>.</p>
+
+<p>As everyone can read in every website that talks about it, Zsh is a Shell as well as Bash, but with an important feature for me: the <strong>double prompt</strong>, one on the left side of the shell -like in Bash- and <strong>one on the right side</strong>. So, what changed with Zsh?</p>
+
+<h3 id="who-i-am">Who I am</h3>
+
+<p>Well, not what “I am” personally of course, but the way the user name is displayed, with a particular regards to <strong>root</strong> user<a rel="nofollow" href="#footnote1" id="ref_footnote1"><sup>1</sup></a>.</p>
+
+<p><img src="/images/iamroot.png" alt="iamroot" /></p>
+
+<p>here is the <strong>definition of the left prompt</strong> (this one goes on <code>.zshrc</code> configuration file):</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="k">if</span> <span class="o">[</span> <span class="k">${</span><span class="nv">USER</span><span class="k">}</span> <span class="o">=</span> root <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+    <span class="nv">PROMPT</span><span class="o">=</span><span class="s1">&#39;%F{red}$(_prompt_line)%f# &#39;</span>
+<span class="k">else</span>
+    <span class="nv">PROMPT</span><span class="o">=</span><span class="s1">&#39;%F{yellow}$(_prompt_line)%f&gt; &#39;</span>
+<span class="k">fi</span></code></pre></div>
+
+<p>where <code>__prompt_line</code> is the following function</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">_prompt_line<span class="o">()</span>
+<span class="o">{</span>
+    <span class="nb">echo</span> -n <span class="s2">&quot;Iam%n&quot;</span>
+<span class="o">}</span></code></pre></div>
+
+<p><code>%n</code> is the <em>user name</em>.</p>
+
+<h3 id="the-working-directory-path">The working directory path</h3>
+
+<p>The only thing I always found annoying <strong>in Bash</strong> was the fact that <strong>the prompt can fill the main part of the command line</strong> when you are working in a folder with a deep path respect home:</p>
+
+<p><img src="/images/bash-long-path.png" alt="bash-long-path" /></p>
+
+<p>This way I do not have a straight line of comands each one above the previous also, which could be easier to read.</p>
+
+<p>As I said, Zsh has got a right prompt (<code>RPROMPT</code> variable) that can be used to display all sort of information (e.g. the location path and the current time, as you can see in the next picture) having the beginning of the command line always at the same level, but the real good thing is that the <strong>RPROMPT disappears when you need more space</strong></p>
+
+<p><img src="/images/zsh-long-path.png" alt="zsh-long-path" /></p>
+
+<p>I still prefer to have even more space, so I changed the right prompt in order to show the current working directory and its parent only(the <code>%2c</code> variable, where 2 is the number of folders to show)</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">RPROMPT</span><span class="o">=</span><span class="s1">&#39;%2c %F{yellow} %T%f&#39;</span></code></pre></div>
+
+<h3 id="the-integration-with-git">The Integration with GIT</h3>
+
+<p>With Zsh functions I could <strong>integrate some GIT information</strong> from the list above directly into the command line: the <strong>current branch</strong>, the most recent <strong>tag</strong>, uncommitted <strong>changes</strong> and <strong>stashed content</strong>:</p>
+
+<p><img src="/images/zsh-with-git.png" alt="zsh-with-git-info" /></p>
+
+<p>Current branch is shown in cyan, followed by the most recent tag (if any) in green. Changes to be committed are suggested by the symbol <em>↪</em> and the number of stashed changes by the pattern <em>SN</em> in red (N is the number of stashed changes). And this is the code</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">_prompt_git_status<span class="o">()</span>
+<span class="o">{</span>
+    <span class="nb">local </span><span class="nv">__git_branch</span><span class="o">=</span><span class="k">$(</span>git rev-parse --abbrev-ref HEAD 2&gt;/dev/null<span class="k">)</span>
+
+    <span class="k">if</span> <span class="o">[</span> -n <span class="s2">&quot;${__git_branch}&quot;</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+        <span class="nb">echo</span> -n <span class="s1">&#39;[%F{cyan}&#39;</span><span class="nv">$__git_branch</span><span class="s1">&#39;%f&#39;</span>
+
+
+        <span class="nb">local </span><span class="nv">__git_tag</span><span class="o">=</span><span class="k">$(</span>git describe --tag --abbrev<span class="o">=</span><span class="m">0</span> 2&gt;/dev/null<span class="k">)</span>
+        <span class="k">if</span> <span class="o">[</span> ! -z <span class="k">${</span><span class="nv">__git_tag</span><span class="k">}</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+            <span class="nb">echo</span> -n <span class="s2">&quot;-%F{green}${__git_tag}%f&quot;</span>
+        <span class="k">fi</span>
+        <span class="nb">echo</span> -n <span class="s2">&quot;]&quot;</span>
+
+
+        <span class="nb">local </span><span class="nv">__git_modified</span><span class="o">=</span><span class="k">$(</span>git status --porcelain --untracked-files<span class="o">=</span>no 2&gt;/dev/null <span class="p">|</span> wc -l <span class="k">)</span>
+        <span class="k">if</span> <span class="o">[</span> -n <span class="s2">&quot;${__git_modified}&quot;</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+            <span class="k">if</span> <span class="o">[</span> <span class="s2">&quot;0&quot;</span> <span class="o">=</span> <span class="s2">&quot;${__git_modified}&quot;</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+                <span class="nb">echo</span> -n <span class="s2">&quot;-&quot;</span>
+            <span class="k">else</span>
+                <span class="nb">echo</span> -n <span class="s1">&#39;↪&#39;</span>
+            <span class="k">fi</span>
+        <span class="k">fi</span>
+
+        <span class="nb">local </span><span class="nv">__git_stash</span><span class="o">=</span><span class="k">$(</span>git stash list 2&gt;/dev/null <span class="p">|</span> wc -l<span class="k">)</span>
+        <span class="k">if</span> <span class="o">[</span> -n <span class="s2">&quot;${__git_stash}&quot;</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+            <span class="k">if</span> <span class="o">[</span> <span class="s2">&quot;0&quot;</span> <span class="o">=</span> <span class="s2">&quot;${__git_stash}&quot;</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+                <span class="nb">echo</span> -n <span class="s2">&quot;-&quot;</span>
+            <span class="k">else</span>
+                <span class="nb">echo</span> -n <span class="s2">&quot; %F{red}S${__git_stash}%f&quot;</span>
+            <span class="k">fi</span>
+        <span class="k">fi</span>
+    <span class="k">fi</span>
+<span class="o">}</span>
+
+
+<span class="nv">RPROMPT</span><span class="o">=</span><span class="s1">&#39;$(_prompt_git_status) %2c %F{yellow} %T%f&#39;</span></code></pre></div>
+
+<h3 id="conclusion">Conclusion</h3>
+
+<p>In this post I summarized the simple and productive Shell environment I configured using ZSH for normal work and for work with GIT, having under my sight all the information I need without using any command/function. For sure I will add other info to my prompt in the future, but to complete the post I would suggest to <strong>avoid adding to much functions to ZSH prompt</strong>. Those function are executed every time you press return, so it is better if they are not time expensive or, even worst, blocking.</p>
+
+<h4 id="footnotes">Footnotes</h4>
+<ol>
+  <li>Yes, I know, I could do that on Bash, too, I guess, but not the rest, keep reading ;) <a rel="nofollow" href="#ref_footnote1" id="footnote1">[↩]</a>.</li>
+</ol>
+
+        
+      </div><!-- /.entry-content -->
+    </div><!-- /.entry-wrapper -->
+    <nav class="pagination" role="navigation">
+      
+        <a href="http://localhost:4000/blog/working-remotely/" class="btn" title="Working Remotely">Previous</a>
+      
+      
+        <a href="http://localhost:4000/articles/python-you-ve-got-an-email/" class="btn" title="Python, you've got an e-mail">Next</a>
+      
+    </nav><!-- /.pagination -->
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrapper">
+  <footer role="contentinfo" class="entry-wrapper">
+    
+
+<span>&copy; 2015 Carlo Lobrano. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="http://mademistakes.com/so-simple/" rel="nofollow">So Simple Theme</a>.</span>
+<div class="social-icons">
+	<a href="https://twitter.com/carlolobrano" title="Carlo Lobrano on Twitter" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
+	
+	
+	<a href="https://linkedin.com/in/carlolobrano" title="Carlo Lobrano on LinkedIn" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>
+	<a href="http://stackoverflow.com/users/1197008/carlo" title="Carlo Lobrano on StackExchange" target="_blank"><i class="fa fa-stack-exchange fa-2x"></i></a>
+	<a href="https://instagram.com/carlo.lobrano" title="Carlo Lobrano on Instagram" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+	
+	<a href="https://github.com/clobrano" title="Carlo Lobrano on Github" target="_blank"><i class="fa fa-github-square fa-2x"></i></a>
+	
+  
+	
+  <a href="http://localhost:4000/feed.xml" title="Atom/RSS feed"><i class="fa fa-rss-square fa-2x"></i></a>
+</div><!-- /.social-icons -->
+
+  </footer>
+</div><!-- /.footer-wrapper -->
+
+<script type="text/javascript">
+  var BASE_URL = 'http://localhost:4000';
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://localhost:4000/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="http://localhost:4000/assets/js/scripts.min.js"></script>
+
+
+
+
+</body>
+</html>

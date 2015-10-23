@@ -1,8 +1,7 @@
 ---
-layout: article
-title: "About me"
-date: 2012-11-27
-modified: 2015-03-22
+layout: page
+title: About me
+modified: 2012-11-27
 excerpt:
 image:
   feature:

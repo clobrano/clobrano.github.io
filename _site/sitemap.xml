@@ -1,56 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>/working-remotely/</loc>
+    <loc>http://localhost:4000/blog/do-not-disable-security-layers/</loc>
+    <lastmod>2015-10-20T00:00:00+02:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:4000/articles/library-tell-me-what-i-want-to-hear/</loc>
+    <lastmod>2015-05-04T00:00:00+02:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:4000/articles/python-you-ve-got-an-email/</loc>
+    <lastmod>2015-04-27T00:00:00+02:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:4000/articles/git-in-the-shell-integration/</loc>
+    <lastmod>2015-04-20T00:00:00+02:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:4000/blog/working-remotely/</loc>
     <lastmod>2015-01-04T00:00:00+01:00</lastmod>
-    <priority>0.8</priority>
   </url>
   <url>
-    <loc>/openshift-and-ssh-keys/</loc>
+    <loc>http://localhost:4000/blog/openshift-and-ssh-keys/</loc>
     <lastmod>2014-06-08T00:00:00+02:00</lastmod>
-    <priority>0.8</priority>
   </url>
   <url>
-    <loc>/switch-to-application-shortcut-on-linux/</loc>
+    <loc>http://localhost:4000/articles/switch-to-application-shortcut-on-linux/</loc>
     <lastmod>2014-01-31T00:00:00+01:00</lastmod>
-    <priority>0.8</priority>
   </url>
   <url>
-    <loc>/top-things-to-do-after-installing-ubuntu-the-script/</loc>
+    <loc>http://localhost:4000/articles/top-things-to-do-after-installing-ubuntu-the-script/</loc>
     <lastmod>2013-11-24T00:00:00+01:00</lastmod>
-    <priority>0.8</priority>
   </url>
   <url>
-    <loc>/what-goes-around-comes-around/</loc>
+    <loc>http://localhost:4000/blog/what-goes-around-comes-around/</loc>
     <lastmod>2013-07-28T00:00:00+02:00</lastmod>
-    <priority>0.8</priority>
   </url>
   <url>
-    <loc>/read-a-file-in-just-one-line-in-java/</loc>
+    <loc>http://localhost:4000/blog/read-a-file-in-just-one-line-in-java/</loc>
     <lastmod>2013-01-13T00:00:00+01:00</lastmod>
-    <priority>0.8</priority>
   </url>
   <url>
-    <loc>/the-std-queue-long-memory/</loc>
+    <loc>http://localhost:4000/blog/the-std-queue-long-memory/</loc>
     <lastmod>2013-01-01T00:00:00+01:00</lastmod>
-    <priority>0.8</priority>
   </url>
   <url>
-    <loc>/archive/</loc>
-    <lastmod>2015-03-18T23:32:06+01:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <loc>http://localhost:4000/</loc>
   </url>
   <url>
-    <loc>/about/</loc>
-    <lastmod>2015-03-18T23:32:06+01:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <loc>http://localhost:4000/theme-setup/</loc>
   </url>
   <url>
-    <loc>/</loc>
-    <lastmod>2015-03-18T23:32:06+01:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <loc>http://localhost:4000/blog/</loc>
+  </url>
+  <url>
+    <loc>http://localhost:4000/tags/</loc>
+  </url>
+  <url>
+    <loc>http://localhost:4000/articles/</loc>
+  </url>
+  <url>
+    <loc>http://localhost:4000/about/</loc>
   </url>
 </urlset>

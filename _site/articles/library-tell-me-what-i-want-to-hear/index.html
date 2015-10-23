@@ -1,0 +1,291 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Testing: Library, tell me what I want to hear! &#8211; Quantum Leap</title>
+<meta name="description" content="Isolate your code from the library it uses during Unittests">
+<meta name="keywords" content="C/C++, testing">
+
+
+
+<!-- Twitter Cards -->
+<meta name="twitter:title" content="Testing: Library, tell me what I want to hear!">
+<meta name="twitter:description" content="Isolate your code from the library it uses during Unittests">
+<meta name="twitter:site" content="@carlolobrano">
+<meta name="twitter:creator" content="@carlolobrano">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://localhost:4000/images/listen.jpg">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Testing: Library, tell me what I want to hear!">
+<meta property="og:description" content="Isolate your code from the library it uses during Unittests">
+<meta property="og:url" content="http://localhost:4000/articles/library-tell-me-what-i-want-to-hear/">
+<meta property="og:site_name" content="Quantum Leap">
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/articles/library-tell-me-what-i-want-to-hear/">
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Quantum Leap Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+<!-- Webfonts -->
+<script src="https://use.edgefonts.net/source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9;source-code-pro:n4,n7;volkhov.js"></script>
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- HTML5 Shiv and Media Query Support -->
+<!--[if lt IE 9]>
+  <script src="http://localhost:4000/assets/js/vendor/html5shiv.min.js"></script>
+  <script src="http://localhost:4000/assets/js/vendor/respond.min.js"></script>
+<![endif]-->
+
+<!-- Modernizr -->
+<script src="http://localhost:4000/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+
+
+<!-- MathJax -->
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="http://localhost:4000/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="http://localhost:4000/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="http://localhost:4000/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://localhost:4000/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://localhost:4000/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:4000/images/apple-touch-icon-144x144-precomposed.png">
+
+</head>
+
+<body id="post">
+
+<div class="navigation-wrapper">
+	<nav role="navigation" id="site-nav" class="animated drop">
+	    <ul>
+      
+		    
+		        
+		    
+		    <li><a href="http://localhost:4000/about/" >About</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="http://localhost:4000/articles/" >Articles</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="http://localhost:4000/blog/" >Blog</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="http://localhost:4000/tags/" >Tags</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="http://localhost:4000/search/" >Search</a></li>
+		  
+	    </ul>
+	</nav>
+</div><!-- /.navigation-wrapper -->
+
+<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+
+<header class="masthead">
+	
+		<div class="wrap">
+			<a href="http://localhost:4000/" class="site-logo" rel="home" title="Quantum Leap"><img src="http://localhost:4000/images/site-logo.png" width="200" height="200" alt="Quantum Leap logo" class="animated fadeInDown"></a>
+		</div>
+	
+</header><!-- /.masthead -->
+
+
+<div class="js-menu-screen menu-screen"></div>
+
+
+<div id="main" role="main">
+  <article class="hentry">
+    <img src="http://localhost:4000/images/listen.jpg" class="entry-feature-image" alt="Testing: Library, tell me what I want to hear!" ><p class="image-credit">Image credit: <a href="">http://kingstheology.org</a></p>
+    <div class="entry-wrapper">
+      <header class="entry-header">
+        <span class="entry-tags"><a href="http://localhost:4000/tags/#C/C++" title="Pages tagged C/C++">C/C++</a>&nbsp;&bull;&nbsp;<a href="http://localhost:4000/tags/#testing" title="Pages tagged testing">testing</a></span>
+        
+          <h1 class="entry-title">Testing: Library, tell me what I want to hear!</h1>
+        
+      </header>
+      <footer class="entry-meta">
+        
+        
+        
+          <img src="http://localhost:4000/images/bio-photo.jpg" class="bio-photo" alt="Carlo Lobrano bio photo"></a>
+        
+        <span class="author vcard">By <span class="fn">Carlo Lobrano</span></span>
+        <span class="entry-date date published"><time datetime="2015-05-04T00:00:00+02:00"><i class="fa fa-calendar-o"></i> May 04, 2015</time></span>
+        
+        
+        
+        
+      </footer>
+      <div class="entry-content">
+        <p>Programming is an activity that presents often the same problems, so that as the time passes you can see if you are improving your experience or not.</p>
+
+<p>A couple of years ago I was working on a daemon that received information about hardware devices connected to the system using a open source library.
+The software relied on that library to get all sort of information about the kind of device and do other stuff accordingly and that was cool and fine.
+<strong>Testing</strong> the piece of code that used that information <strong>was not easy</strong> however, since it had to be “stimulated” with real devices so that I could test the behavior only with the devices in my possession.
+Obviously I tought about simulating the library, but I only knew about the <a href="http://man7.org/linux/man-pages/man8/ld.so.8.html">LD_PRELOAD</a> “trick” at that time and that meant to implement more functions than I wanted to. Also sometimes I only wanted to change the normal library behavior, not implement it from scratch.</p>
+
+<p>Few weeks ago I went through the same problem, but this time my research stubled upon a better solution (at least if you are developing in a GNU/Linux environment): the <strong>–wrap</strong> GNU/Linux linker flag.</p>
+
+<p>I first read about this option on <a href="https://lwn.net/Articles/558106/">this</a> page<a rel="nofollow" href="#footnote1" id="ref_footnote1"><sup>1</sup></a> (towards the end of the page) and a new world opened in front of me.</p>
+
+<p><a href="ftp://ftp.gnu.org/old-gnu/Manuals/ld-2.9.1/html_mono/ld.html">here</a> is the complete description of all the Linker’s flags, while <em>–wrap</em> only is reported below:</p>
+
+<p><img src="/images/2015-05-04/wrap-sym-definition.png" alt="wrap-sym-def" /></p>
+
+<p>How does it work? Let’s say we have a source <em>testcode.c</em> like this</p>
+
+<div class="highlight"><pre><code class="language-c" data-lang="c"><span class="cp">#include &lt;stdio.h&gt;</span>
+<span class="cp">#include &quot;libtest.h&quot;</span>
+
+<span class="kt">int</span> <span class="nf">main</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="kt">int</span> <span class="n">res</span> <span class="o">=</span> <span class="n">ultimate_question_of_life_universe_and_everything</span> <span class="p">();</span>
+
+    <span class="n">printf</span> <span class="p">(</span><span class="s">&quot;The response is %d</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">res</span><span class="p">);</span>
+
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span></code></pre></div>
+
+<p>and that the function <em>ultimate_question_of_life_universe_and_everything</em> is provided by an external library <strong>libtest.so</strong> you have no power over (and you do not need to test, too).</p>
+
+<p>That means <em>testcode</em> binary has got an <strong>Undefined (U)</strong> symbol <em>ultimate_question_of_life_universe_and_everything</em>, that will be provided by the library at runtime.</p>
+
+<p><img src="/images/2015-05-04/testcode_sym_0.png" alt="nm_testcode" /></p>
+
+<p>The function is implemented (for the sake of this test) in the following way.</p>
+
+<div class="highlight"><pre><code class="language-c" data-lang="c"><span class="kt">int</span> <span class="nf">ultimate_question_of_life_universe_and_everything</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">printf</span> <span class="p">(</span><span class="s">&quot;Asking for &#39;%s&#39;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">__FUNCTION__</span><span class="p">);</span>
+    <span class="k">return</span> <span class="mi">42</span><span class="p">;</span>
+<span class="p">}</span></code></pre></div>
+
+<p>Compiling this code with the following line and running the binary we have:</p>
+
+<pre><code>gcc -g -Wall -c testcode.c
+gcc -o testcode testcode.o -L./ -ltest
+</code></pre>
+
+<p><img src="/images/2015-05-04/testcode_run_real.png" alt="run_testcode_real" /></p>
+
+<p>Now, I want to <strong>provide my own implementation</strong> of the function, so I wrote <em>__wrap_ultimate_question_of_life_universe_and_everything</em> in the same source file <em>testcode.c</em><a rel="nofollow" href="#footnote2" id="ref_footnote2"><sup>2</sup></a></p>
+
+<div class="highlight"><pre><code class="language-c" data-lang="c"><span class="kt">int</span> <span class="nf">__wrap_ultimate_question_of_life_universe_and_everything</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">printf</span> <span class="p">(</span><span class="s">&quot;Asking for &#39;%s&#39;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">__FUNCTION__</span><span class="p">);</span>
+    <span class="k">return</span> <span class="mi">33</span><span class="p">;</span>
+<span class="p">}</span></code></pre></div>
+
+<p>The <strong>naming convention is important</strong>. All the wrapped function must have the same name of the orginal functions preceded by <em>__wrap_</em>.
+Also I had to <strong>change how I compile the code</strong> telling the GNU/Linker to replace every function named <code>SYMBOL</code> with a function named <code>__wrap_SYMBOL</code> using <code>-Wl,--wrap=symbol</code> flag</p>
+
+<pre><code>gcc -Wl,--wrap=ultimate_question_of_life_universe_and_everything -o testcode testcode.o -L./ -ltest
+</code></pre>
+
+<h2 id="first-test-run-the-code">First test: run the code</h2>
+
+<p><img src="/images/2015-05-04/testcode_run_fake.png" alt="run_testcode_fake" /></p>
+
+<p>Everything went fine. The function called is my <em>__wrap</em> version, also the returned value is different, but <strong>there is more</strong>.</p>
+
+<h2 id="second-test-look-at-the-symbols">Second test: look at the symbols</h2>
+
+<p>Using <code>nm</code> to look at the symbols in <code>testcode</code> we can see that <em>ultimate_question_of_life_universe_and_everything</em> symbol is disappeard, replaced by my <code>__wrap</code> version, which is in fact <strong>Defined (T)</strong>.</p>
+
+<p><img src="/images/2015-05-04/testcode_sym_1.png" alt="nm_testcode" /></p>
+
+<h2 id="conclusions">Conclusions</h2>
+
+<p>To summing up, I can now better isolate the behavior of my code during tests, providing my own controlled versions of its interfaces towards other libraries. I do not need to implement all the external libary’s symbols, just the ones I need. Finally <strong>I can even use the original implementation</strong> calling a function name <em>__real_symbol</em>, so I can just modify the real behavior of the library to test situations hard to reproduce in a real environment.</p>
+
+<h3 id="notes">Notes</h3>
+
+<ol>
+  <li>The page is about <strong>Cmocka</strong> C testing framework, which I found really good, by the way<a rel="nofollow" href="#ref_footnote1" id="footnote1">[↩]</a>.</li>
+  <li>This is only for this article. I usually wrote a new source code with all the <em>wrapped</em> functions compiled agains the test code with the –wrap flag<a rel="nofollow" href="#ref_footnote2" id="footnote2">[↩]</a>.</li>
+</ol>
+
+
+        
+      </div><!-- /.entry-content -->
+    </div><!-- /.entry-wrapper -->
+    <nav class="pagination" role="navigation">
+      
+        <a href="http://localhost:4000/articles/python-you-ve-got-an-email/" class="btn" title="Python, you've got an e-mail">Previous</a>
+      
+      
+        <a href="http://localhost:4000/blog/do-not-disable-security-layers/" class="btn" title="Do not disable security layers">Next</a>
+      
+    </nav><!-- /.pagination -->
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrapper">
+  <footer role="contentinfo" class="entry-wrapper">
+    
+
+<span>&copy; 2015 Carlo Lobrano. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="http://mademistakes.com/so-simple/" rel="nofollow">So Simple Theme</a>.</span>
+<div class="social-icons">
+	<a href="https://twitter.com/carlolobrano" title="Carlo Lobrano on Twitter" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
+	
+	
+	<a href="https://linkedin.com/in/carlolobrano" title="Carlo Lobrano on LinkedIn" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>
+	<a href="http://stackoverflow.com/users/1197008/carlo" title="Carlo Lobrano on StackExchange" target="_blank"><i class="fa fa-stack-exchange fa-2x"></i></a>
+	<a href="https://instagram.com/carlo.lobrano" title="Carlo Lobrano on Instagram" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+	
+	<a href="https://github.com/clobrano" title="Carlo Lobrano on Github" target="_blank"><i class="fa fa-github-square fa-2x"></i></a>
+	
+  
+	
+  <a href="http://localhost:4000/feed.xml" title="Atom/RSS feed"><i class="fa fa-rss-square fa-2x"></i></a>
+</div><!-- /.social-icons -->
+
+  </footer>
+</div><!-- /.footer-wrapper -->
+
+<script type="text/javascript">
+  var BASE_URL = 'http://localhost:4000';
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://localhost:4000/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="http://localhost:4000/assets/js/scripts.min.js"></script>
+
+
+
+
+</body>
+</html>

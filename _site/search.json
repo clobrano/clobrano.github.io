@@ -1,0 +1,127 @@
+[
+
+  
+    {
+      "title"			: "Do not disable security layers",
+      "link"			: "http://localhost:4000/blog/do-not-disable-security-layers/",
+      "excerpt"		: "Bad habits in tutorials, guides, etc."
+    }
+  
+
+  
+    ,{
+      "title"			: "Testing: Library, tell me what I want to hear!",
+      "link"			: "http://localhost:4000/articles/library-tell-me-what-i-want-to-hear/",
+      "excerpt"		: "Isolate your code from the library it uses during Unittests"
+    }
+  
+
+  
+    ,{
+      "title"			: "Python, you've got an e-mail",
+      "link"			: "http://localhost:4000/articles/python-you-ve-got-an-email/",
+      "excerpt"		: "Python company's e-mail notifier"
+    }
+  
+
+  
+    ,{
+      "title"			: "Git in the Shell. Integration",
+      "link"			: "http://localhost:4000/articles/git-in-the-shell-integration/",
+      "excerpt"		: "No real need for Git GUI, all you need is a SHELL"
+    }
+  
+
+  
+    ,{
+      "title"			: "Working Remotely",
+      "link"			: "http://localhost:4000/blog/working-remotely/",
+      "excerpt"		: ""
+    }
+  
+
+  
+    ,{
+      "title"			: "Openshift and SSH Keys",
+      "link"			: "http://localhost:4000/blog/openshift-and-ssh-keys/",
+      "excerpt"		: ""
+    }
+  
+
+  
+    ,{
+      "title"			: "Switch-to-application Shortcut on Linux",
+      "link"			: "http://localhost:4000/articles/switch-to-application-shortcut-on-linux/",
+      "excerpt"		: "Frequently used applications at your fingertips"
+    }
+  
+
+  
+    ,{
+      "title"			: "Top Things to Do After Installing Ubuntu. the Script",
+      "link"			: "http://localhost:4000/articles/top-things-to-do-after-installing-ubuntu-the-script/",
+      "excerpt"		: "One script to rule them all"
+    }
+  
+
+  
+    ,{
+      "title"			: "What Goes Around, Comes Around",
+      "link"			: "http://localhost:4000/blog/what-goes-around-comes-around/",
+      "excerpt"		: "Fun with overflows"
+    }
+  
+
+  
+    ,{
+      "title"			: "Read a file in just one line with Java",
+      "link"			: "http://localhost:4000/blog/read-a-file-in-just-one-line-in-java/",
+      "excerpt"		: "The shortest way to read a file"
+    }
+  
+
+  
+    ,{
+      "title"			: "The std queue's long memory",
+      "link"			: "http://localhost:4000/blog/the-std-queue-long-memory/",
+      "excerpt"		: "What do you expect to receive from an empty queue?"
+    }
+  
+
+
+
+  
+
+  
+
+  
+
+  
+    ,{
+      "title"			: "Theme Setup",
+      "link"			: "http://localhost:4000/theme-setup/",
+      "excerpt"		: "Instructions on how to install and customize the Jekyll theme So Simple."
+    }
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    ,{
+      "title"			: "About me",
+      "link"			: "http://localhost:4000/about/",
+      "excerpt"		: ""
+    }
+  
+
+  
+
+  
+
+]

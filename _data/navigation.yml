@@ -2,9 +2,15 @@
 
 - title: About
   url: /about/
-  excerpt: "About me"
-  image:
 
-- title: Archive
-  url: /archive/
-  excerpt: "List of articles"
+- title: Articles
+  url: /articles/
+
+- title: Blog
+  url: /blog/
+
+- title: Tags
+  url: /tags/
+
+- title: Search
+  url: /search/
