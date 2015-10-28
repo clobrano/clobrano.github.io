@@ -10,6 +10,7 @@ image:
   feature: free-memory.png
   credit:
 published: true
+share: true
 ---
 
 One of the things I like the most in Linux is the large amount of programs that anybody can try. So I like spending some time installing and trying new applications (most of them with command line interface only), utilities, also themes and the result is that my disk space tends worryingly to be full, therefore I am always looking for other tools to free some memory.
