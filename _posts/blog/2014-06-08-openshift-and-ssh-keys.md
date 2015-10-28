@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Openshift and SSH Keys"
-excerpt: 
+excerpt:
 modified:
 category: blog
 tags: [openshift, ssh, security]
