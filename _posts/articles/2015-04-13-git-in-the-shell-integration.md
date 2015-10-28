@@ -8,6 +8,7 @@ date: 2015-04-20
 image:
     teaser: bash-ghistory.png
 published: true
+share: true
 ---
 
 Initially, I wanted to write a long article about [**GIT**](http://git-scm.com/), how useful it is - [at 10 years since its creation](https://www.atlassian.com/git/articles/10-years-of-git/) - and *blah blah blah*, but then I thought that there are alrady [lots of articles out there saying pretty much the same thing](https://www.google.it/search?client=ubuntu&hs=6Sm&channel=fs&q=git+how+to&oq=git+how+to&gs_l=serp.3...9121.9812.0.10076.7.6.0.0.0.0.0.0..0.0.msedr...0...1c.1.64.serp..7.0.0.vaBWCreLahE) and that I was not adding that much. My contribute, instead, will be about how I integrate it in my workflow, hoping that it could help someone.

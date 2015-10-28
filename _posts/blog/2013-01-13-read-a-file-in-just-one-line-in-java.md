@@ -5,6 +5,7 @@ excerpt: "The shortest way to read a file"
 category: blog
 tags: [java]
 published: true
+share: true
 ---
 
 

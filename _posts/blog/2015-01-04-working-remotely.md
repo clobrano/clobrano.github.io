@@ -7,6 +7,7 @@ tags: [thoughts]
 image:
   feature: remote.jpg
   teaser: remote.jpg
+share: true
 ---
 
 Using [this](http://qz.com/319905/why-even-engineers-think-working-from-home-is-a-bad-idea/) interesting and full of references article as starting point, I want to express my point of view about "working in office" v.s. "working from home" or more in general "remotely".

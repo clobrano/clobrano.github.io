@@ -10,6 +10,7 @@ image:
   feature: listen.jpg
   credit: http://kingstheology.org
 published: true
+share: true
 ---
 
 

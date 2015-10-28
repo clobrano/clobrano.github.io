@@ -9,13 +9,14 @@ image:
     teaser: python-email2.jpg
     feature: python-email2.jpg
 published: true
+share: true
 ---
 
 
 Ok, you landed in a new IT company and you are very excited to start working.
 You have got an **e-mail** address, a **calendar** for meetings, deadlines, planning, holidays (yeah) and very likely an **istant messaging** system and all is under Microsoft Exchange<a rel="nofollow" href="#footnote1" id="ref_footnote1"><sup>1</sup></a>, however you are a Linux developer and you have to (or you just prefer to) work with a GNU/Linux OS, so the question is: **what e-mail client is OK for Linux**?
 
-I actually try and use lot of desktop e-mail clients. [**Thunderbird**](https://www.mozilla.org/en-US/thunderbird/) (with [Lightning](https://www.mozilla.org/en-US/projects/calendar/) for calendar) is probably the best, but it is huge in memory consumption. [**Evolution**](https://wiki.gnome.org/Apps/Evolution) is my preferred, above all for the clean and efficient interface, but is not always easy to configure and quite slow at startup when it tries to syncronize your e-mails. [**KMail**](https://userbase.kde.org/KMail) is nice as well as Evolution (maybe even better), but I mostly run Gtk windows environment so I prefer not to download all its KDE dependencies. 
+I actually try and use lot of desktop e-mail clients. [**Thunderbird**](https://www.mozilla.org/en-US/thunderbird/) (with [Lightning](https://www.mozilla.org/en-US/projects/calendar/) for calendar) is probably the best, but it is huge in memory consumption. [**Evolution**](https://wiki.gnome.org/Apps/Evolution) is my preferred, above all for the clean and efficient interface, but is not always easy to configure and quite slow at startup when it tries to syncronize your e-mails. [**KMail**](https://userbase.kde.org/KMail) is nice as well as Evolution (maybe even better), but I mostly run Gtk windows environment so I prefer not to download all its KDE dependencies.
 
 How not to mention also that if you choose a "custom" client **the responsility** for each problem (e.g. e-mails not received on time, impossibility to send important e-mails...) **is yours**<a rel="nofollow" href="#footnote2" id="ref_footnote2"><sup>2</sup></a>.
 
@@ -42,7 +43,7 @@ M = imaplib.IMAP4_SSL (EMAIL_IMAP_SERVER)
 Login
 -----
 
-Here we have some options. **Password can not be revealed**, so we can provide a **crypted file with the password** or use [**getpass**](https://docs.python.org/2/library/getpass.html) Python module that provide a <u>prompt for the user without echoing</u> (that is, no one can see what you are typing). 
+Here we have some options. **Password can not be revealed**, so we can provide a **crypted file with the password** or use [**getpass**](https://docs.python.org/2/library/getpass.html) Python module that provide a <u>prompt for the user without echoing</u> (that is, no one can see what you are typing).
 
 {% highlight python%}
 password = getpass.getpass ()

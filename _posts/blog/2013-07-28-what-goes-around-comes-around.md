@@ -5,6 +5,7 @@ excerpt: "Fun with overflows"
 category: blog
 tags: [python]
 published: true
+share: true
 ---
 
 Few weeks ago I begun the [Udacity](https://www.udacity.com/)'s course **Software Testing**. The course covers the basics of software testing (you don't say? :D) and it is pretty good since there are video lessons and exercises, quizes to put yourself to the test.
