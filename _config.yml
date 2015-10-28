@@ -1,10 +1,9 @@
 # Site wide configuration
 
-title: Quantum Leap
+title: Carlo Lobrano
 locale: en_US
-description: Development, Smart Tools and Automation
-logo: site-logo.png
-teaser: line-teaser.jpg
+description: Ideas about Software Development, Smart Tools and Automation
+logo:
 search: true
 url:
 
@@ -34,8 +33,8 @@ exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.
 
 # Site owner
 owner:
-  name: Carlo Lobrano   
-  avatar: bio-photo.jpg
+  name: Carlo Lobrano
+  avatar: profile-pic.jpg
   email: c.lobrano@gmail.com
   disqus-shortname:
   twitter: carlolobrano
