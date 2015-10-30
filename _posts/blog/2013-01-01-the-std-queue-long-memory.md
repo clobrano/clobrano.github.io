@@ -6,6 +6,7 @@ title: The std queue's long memory
 tags: [python]
 published: true
 date: 2013-01-01 00:00
+share: true
 ---
 
 

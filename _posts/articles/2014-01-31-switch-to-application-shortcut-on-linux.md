@@ -10,6 +10,7 @@ image:
   feature:
   teaser:
   thumb:
+share: true
 ---
 
 There is always one software that we use a lot at work. As a programmer, most of my daily work is spent on a Linux terminal or on the IDE.

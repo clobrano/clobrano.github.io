@@ -10,6 +10,7 @@ image:
   feature: safe1024x420.jpg
   credit: https://pixabay.com/en/safe-vault-steel-door-banking-913452/
 published: true
+share: true
 ---
 
 *Disclaimer (sort of): here I am talking from a Software developer point of view AND about open source projects, which is true in most of the cases where I saw the behavior I am about to describe.*

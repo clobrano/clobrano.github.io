@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Openshift and SSH Keys"
-excerpt: 
+excerpt:
 modified:
 category: blog
 tags: [openshift, ssh, security]
@@ -9,6 +9,7 @@ image:
   feature:
   teaser:
   thumb:
+share: true
 ---
 
 Since I moved back to Ubuntu-based machines I had some "problems" with Openshift application management (I am talking about command line).

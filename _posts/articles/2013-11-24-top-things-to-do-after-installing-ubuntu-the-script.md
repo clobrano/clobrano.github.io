@@ -6,6 +6,7 @@ excerpt: "One script to rule them all"
 categories: articles
 tags: [scripting, ubuntu]
 published: true
+share: true
 ---
 
 At each Ubuntu release lot of articles appear on the Web about **what to do after installing Ubuntu**. This actually happens for almost all the major Linux distributions, since some tools, libraries or codecs have legal constraints in some countries so their are not shipped with the default GNU Linux distribution.
