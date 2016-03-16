@@ -36,7 +36,7 @@ apt-get purge <package>
 Some days ago, worried more than usual about my **70% filled HD**, I looked deeply at the problem (namely, I googled deeply) and found out other interesting commands:
 
 {% highlight bash %}
-dpkg-query -W --showformat='${Installed-Size} ${Package}' | sort -nr | more # this list installed packages by memory footprint, nice!
+dpkg-query -W --showformat='${Installed-Size} ${Package}\n' | sort -nr | more # this list installed packages by memory footprint, nice!
 apt-get clean   # how did I miss that so far?
 dpkg --get-selections | grep linux-images
 {% endhighlight %}
