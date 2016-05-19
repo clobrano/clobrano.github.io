@@ -4,7 +4,7 @@ title: "Solve unresolved external symbol"
 excerpt: Which library provides a given external symbol?
 tags: [microblogging]
 category: blog
-date: 2016-05-19 10:00
+date: 2016-05-19
 image:
   teaser:
   feature:
