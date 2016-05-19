@@ -35,6 +35,6 @@ The solution is this:
 $ find /lib/location "libraries list" -exec nm --print-file-name {} \; | grep <symbol-name>
 {% endhighlight %}
 
-the exec part is the main dish: I'm iterating over a list of files (find replace "{} \;" with the name of a file), so I need the nm flag _--print-file-name_ so that if grep finds the symbol name, it will print also the library that contains it.
+the exec part is the main dish: I'm iterating over a list of files (find replaces "{} \;" with the name of a file), so I need the nm flag _--print-file-name_ so that if grep finds the symbol name, it will print also the library that contains it.
 
 So, basically, running this script in the working system, I found that there was a mismatch in one of the libraries version.
