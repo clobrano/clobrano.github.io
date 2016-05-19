@@ -29,9 +29,11 @@ the toolkit
 * **find** is the tool to iterate over the libraries automatically
 * **grep** is the tool to check for the symbol name.
 
-The solution is that:
+The solution is this:
 
-    $ find /lib/location "libraries list" -exec nm --print-file-name {} \; | grep <symbol-name>
+{% highlight bash %}
+$ find /lib/location "libraries list" -exec nm --print-file-name {} \; | grep <symbol-name>
+{% endhighlight %}
 
 the exec part is the main dish: I'm iterating over a list of files (find replace "{} \;" with the name of a file), so I need the nm flag _--print-file-name_ so that if grep finds the symbol name, it will print also the library that contains it.
 
