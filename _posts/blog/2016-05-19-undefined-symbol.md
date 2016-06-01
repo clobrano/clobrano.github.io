@@ -4,7 +4,7 @@ title: "Solve unresolved external symbol"
 excerpt: Which library provides a given external symbol?
 tags: [microblogging]
 category: blog
-date: 2016-05-19 12:00
+date: 2016-05-19 10:00
 image:
   teaser:
   feature:
@@ -31,7 +31,10 @@ the toolkit
 
 The solution is that:
 
-    $ find /lib/location "libraries list" -exec nm --print-file-name {} \; | grep <symbol-name>
+{% highlight bash %}
+$ find /lib/location "libraries list" -exec nm --print-file-name {} \; | grep <symbol-name>
+{% endhighlight %}
+
 
 the exec part is the main dish: I'm iterating over a list of files (find replace "{} \;" with the name of a file), so I need the nm flag _--print-file-name_ so that if grep finds the symbol name, it will print also the library that contains it.
 
