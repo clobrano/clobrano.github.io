@@ -32,7 +32,7 @@ the toolkit
 The solution is this:
 
 {% highlight bash %}
-$ find /lib/location "libraries list" -exec nm --print-file-name {} \; | grep <symbol-name>
+$ find /lib/location -name "libraries list" -exec nm --print-file-name {} \; | grep <symbol-name>
 {% endhighlight %}
 
 
