@@ -1,8 +1,8 @@
 ---
 layout: post
-excerpt: "Multiple versions of core libraries"
+excerpt: Backward compatibility for applications that need old core libraries
 categories: blog
-title: Backward compatibility for applications that need old core libraries
+title: "Multiple versions of core libraries"
 tags: [microblogging]
 published: true
 date: 2016-07-12 00:00
