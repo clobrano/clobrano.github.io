@@ -16,7 +16,7 @@ As example, if we have an application that needs some shared library with soname
 
 Then, a few days later, I used `LD_LIBRARY_PATH` to test a custom version of ModemManager (the system was using the wrong library ([could not find symbol X](http://clobrano.github.io/blog/undefined-symbol/)) and I light switched on in my head. Can we use `LD_LIBRARY_PATH` for core libraries?
 
-Unfortunately is not that easy, because it might happen that some absolute path is hard-coded at link time (e.g. ld-linux.so.2 from glibc) and there might be other problems too. Those static paths are the ones reported by "ldd".
+Unfortunately is not that easy, because it might happen that some absolute path is hard-coded at link time<a rel="nofollow" href="#footnote1" id="ref_footnote1"><sup>1</sup></a>(e.g. ld-linux.so.2 from glibc) and there might be other problems too.
 
 The easiest solution would require to build the application with the new glibc (or with something like [rtldi](http://bitwagon.com/rtldi/rtldi.html)) using the --dynamic-linker flag (ELF executable). However the application can not be rebuilt, usually, and then things get trickier. One solution would be to "instruct" the linker before running the application
 
@@ -26,4 +26,6 @@ $ /path/to/new/libc/ld-linux.so.2 --library-path /path/to/lib <binary>
 
 Some articles I read suggest also the *chroot* solution, but I still need to see this solution better.
 
+---
 
+1. Those static paths are the ones reported by "ldd"<a rel="nofollow" href="#ref_footnote1" id="footnote1">[↩]</a>.
