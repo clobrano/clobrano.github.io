@@ -33,7 +33,7 @@ I took this one for the following reasons:
 1. I though "Ok, it's for newcomers, it shouldn't be that hard" and I was kind of wrong :D
 2. I had enough search keywords to look into the code and find the right spot to work in. I was right, here :)
 
-The real challenge wasn't really the feature itself, but the fact that the displayed text should be easily translated. Ideally, developers should reduce repetition as much as possible (DRY principle right?), but translators need context to do their job. 
+The real challenge wasn't really the feature itself, but the fact that the displayed text should be easily translated. Ideally, developers should reduce repetition as much as possible (DRY principle right?), but translators need context to do their job.
 
 Let's make a simple example. To generate a messages like this one:
 
@@ -47,27 +47,32 @@ I was amazed by this little intricacies, but at the same time I've never worked 
 So, cutting a long story short, after 8 patch versions :D, this is the outcome. It is a matter of taste, but I hope you like it, because [it is in master now](https://git.gnome.org/browse/gnome-calendar/commit/?id=9033d98) :D
 
 <figure>
-    <img src="/images/2017-07-05/new-event-today-old.png" width="400" height="290">
-    <figcaption>New Event Today, old version</figcaption>
+    <img src="/images/2017-07-05/new-event-today-old.jpg" width="400" height="290">
+   <figcaption>New Event Today, old version</figcaption>
 </figure>
 
 <figure>
-    <img src="/images/2017-07-05/new-event-today-new.png" width="400" height="290">
+    <img src="/images/2017-07-05/new-event-today-new.jpg" width="400" height="290">
     <figcaption>New Event Today, new version</figcaption>
 </figure>
 
 <figure>
-    <img src="/images/2017-07-05/multiday-old.png" width="400" height="290">
+    <img src="/images/2017-07-05/multiday-old.jpg" width="400" height="290">
     <figcaption>New Multiday Event in the current week, old version</figcaption>
 </figure>
 
 <figure>
-    <img src="/images/2017-07-05/multiday-new.png" width="400" height="290">
+    <img src="/images/2017-07-05/multiday-new.jpg" width="400" height="290">
     <figcaption>New Multiday Event in the current week, new version</figcaption>
 </figure>
 
 <figure>
-    <img src="/images/2017-07-05/future-event-new.png" width="400" height="290">
+    <img src="/images/2017-07-05/future-event-old.jpg" width="400" height="290">
+    <figcaption>New Event in 7 days from Today, new version</figcaption>
+</figure>
+
+<figure>
+    <img src="/images/2017-07-05/future-event-new.jpg" width="400" height="290">
     <figcaption>New Event in 7 days from Today, new version</figcaption>
 </figure>
 
