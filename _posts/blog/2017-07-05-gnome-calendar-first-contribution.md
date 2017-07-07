@@ -12,7 +12,7 @@ published: true
 share: true
 ---
 
-I am not totally new to open source contributions. Luckily enough, I do have both some spare time to contribute to the communities I like and a Company that want me to support some open source projects (see [UbuntuCore](https://www.ubuntu.com/core) and [ModemManager](https://www.freedesktop.org/wiki/Software/ModemManager/)). However, I have never written anything about that. I would like, but usually my patches provide improvement that a "normal user" can hardly see (like udev rules management, or better support for [3G/4G modems](http://paldan.altervista.org/telit-plugin-improvements-modemmanager/)), so that it is hard to explain the delta provided.
+I am not totally new to open source contributions. Luckily enough, I have both some spare time to contribute to the communities I like and a Company that wants me to support some open source projects (see [UbuntuCore](https://www.ubuntu.com/core) and [ModemManager](https://www.freedesktop.org/wiki/Software/ModemManager/)). However, I have never written anything about that. I'd like to, but usually my patches provide improvements that a "normal user" can hardly see (like udev rules management, or better support for [3G/4G modems](http://paldan.altervista.org/telit-plugin-improvements-modemmanager/)), so that it is hard to explain the delta provided.
 
 This time though, my contribution to GNOME Calendar is more visible, so I'd like to show it :)
 
@@ -21,7 +21,7 @@ This time though, my contribution to GNOME Calendar is more visible, so I'd like
 
 > The Newcomers Guide is for developers who want to participate in coding GNOME's apps
 
-Two projects were (and are) interesting to me, [Polari](Polari) and [Calendar](Calendar), but I am not (yet) very familiar with javascript and I have always preferred using my calendars from a desktop application than from the "famous-web-based-one", so I choose the latter.
+Two projects were (and are) interesting to me, [Polari](Polari) and [Calendar](Calendar), but I am not very familiar with javascript, yet, and I have always preferred using my calendars from a desktop application than from the "famous-web-based-one", so I chose the latter.
 
 The first newcomers Calendar bug I saw was this one<a rel="nofollow" href="#footnote2" id="ref_footnote2"><sup>2</sup></a>:
 
@@ -33,7 +33,7 @@ I took this one for the following reasons:
 1. I though "Ok, it's for newcomers, it shouldn't be that hard" and I was kind of wrong :D
 2. I had enough search keywords to look into the code and find the right spot to work in. I was right, here :)
 
-The real challenge wasn't really the feature itself, but the fact that the displayed text should be easily translated. Ideally, developers should reduce repetition as much as possible (DRY principle right?), but translators need context to do their job.
+The real challenge wasn't really the feature itself, but the fact that the displayed text should be easily translated. Ideally, developers should reduce repetition as much as possible (DRY principle, right?), but translators need context to do their job.
 
 Let's make a simple example. To generate a messages like this one:
 
