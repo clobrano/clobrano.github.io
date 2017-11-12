@@ -1,0 +1,4 @@
+The birth of the tool I want to talk about today is quite funny.
+I am an happy VIM user since three years and I like to learn new stuff about VIM, its configuration and plug-ins, so a year ago, it happen to watch [this]() talk. (Note:Please watch it, because it's at the same time informative and really funny). There are several hints I took from that talk, however, the main one regarding this post was the ability to make your own snippet simply writing a file with it inside and let VIM automatically copy&paste it in the right spot using its <read> function.
+
+I've never been a frequent snippet user, but I've found this information extremely useful for the tons of shell script I write frequently for my work. One year ago, because of lack of time and (ability to stick to a process:reformulate), all my scripts lack of documentation.
