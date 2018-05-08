@@ -21,7 +21,7 @@ or
    sudo snap refresh communitheme
 {% endhighlight %}
 
-![communitheme-3rd-release-pic](communitheme-3rd-release-pic.jpeg)
+![communitheme-3rd-release-pic](/images/communitheme-3rd-release-pic.jpeg)
 
 If you are already using it (though, the update should arrive automatically).
 
