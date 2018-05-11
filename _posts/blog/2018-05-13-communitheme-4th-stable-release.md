@@ -1,8 +1,8 @@
 ---
 layout: post
-excerpt: "Communitheme 4th stable release"
+excerpt: "Communitheme new stable release"
 categories: blog
-title: Third stable release of Communitheme
+title: Communitheme 4th stable release
 tags: [communitheme,theme,opensource]
 published: true
 date: 2018-05-11 22:00
