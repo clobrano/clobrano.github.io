@@ -14,7 +14,7 @@ The Communitheme Team has just promoted the **edge** channel to **stable**!
 This week update brings mainly bug fixes and some big and little details on:
 
 - Context menu shadow in GNOME Nautilus,
-- GNOME Terminal tabs now,
+- GNOME Terminal tabs,
 - Headerbars and separation between focused and unfocused windows,
 - Bright GNOME Shell dialog windows.
 
