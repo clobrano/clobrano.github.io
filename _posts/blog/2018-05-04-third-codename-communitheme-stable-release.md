@@ -2,7 +2,7 @@
 layout: post
 excerpt: "Third codename Communitheme stable release"
 categories: blog
-title: Second stable release of Communitheme
+title: Third stable release of Communitheme
 tags: [communitheme,theme,opensource]
 published: true
 date: 2018-05-04 22:00
