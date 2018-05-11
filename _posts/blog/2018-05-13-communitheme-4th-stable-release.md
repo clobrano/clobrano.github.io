@@ -24,3 +24,7 @@ Stable Snap package will be automatically updated each week, but if you want to 
 {% highlight bash %}
 snap install communitheme --edge
 {% endhighlight %}
+
+![communitheme-3rd-release-pic](/images/terminal.png)
+
+![communitheme-3rd-release-pic](/images/nautilus-headerbars.png)
