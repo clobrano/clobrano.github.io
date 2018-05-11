@@ -4,7 +4,7 @@ excerpt: "Communitheme 4th stable release"
 categories: blog
 title: Third stable release of Communitheme
 tags: [communitheme,theme,opensource]
-published: false
+published: true
 date: 2018-05-11 22:00
 share: true
 ---
