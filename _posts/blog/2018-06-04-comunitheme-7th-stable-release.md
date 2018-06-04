@@ -4,7 +4,7 @@ excerpt: "Communitheme first stable release of June"
 categories: blog
 title: Communitheme 7th stable release
 tags: [communitheme,ubuntu,bionicbeaver,theme,opensource]
-published: false
+published: true
 date: 2018-06-04 22:00
 share: true
 ---
