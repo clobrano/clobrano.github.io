@@ -17,7 +17,7 @@ This week release we have
 - A subtle restyle for (disabled) switch
 - A unified style for radio and check buttons
 - No more dashed line when scrolling (e.g. in Nautilus), but a nice shadow (easier to see than to write)
-- Beautify emoji-picker popover style, thanks to a new contributor ;)
+- Beautified emoji-picker popover style, thanks to a new contributor ;)
 
 And probably the minor number of bugs than ever :D
 
