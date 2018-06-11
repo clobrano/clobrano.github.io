@@ -9,9 +9,9 @@ date: 2018-06-11 22:00
 share: true
 ---
 
-The **Communitheme team** is happy to announce a new table release!
+The **Communitheme team** is happy to announce a new stable release!
 
-This release is one of the major updates in the last weeks:
+This week brings one of the major updates since a lot of time:
 
 - A new sidebar/mainview color set, hope you like it as we do
 - A back to the future change for text selection
