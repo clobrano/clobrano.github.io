@@ -4,7 +4,7 @@ excerpt: "Communitheme new stable release"
 categories: blog
 title: Communitheme 8th stable release
 tags: [communitheme,ubuntu,bionicbeaver,theme,opensource]
-published: false
+published: true
 date: 2018-06-11 22:00
 share: true
 ---
