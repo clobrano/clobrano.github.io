@@ -21,7 +21,7 @@ This week release we have
 
 And probably the minor number of bugs open than ever :D
 
-Moreover a **little bonus for Firefox users**. Thanks to [Firefox Test pilot](https://testpilot.firefox.com/) I "develop" (it is too easy) a [Communitheme inspired Firefox theme](https://color.firefox.com/?theme=XQAAAALtAAAAAAAAAABBKYhm849SCiazH1KEGccwS-xNVAWBveAusLC2VAlvlSjJ6UJSeqAgCYbdwa_-rV70IROd68eEot6ey6DBD6clRBXp1e7Wbm3jkhhZsTB6iGtxUNA9rD_f7WkYu4v4RFB_XR74DFyPAFWYVQkUMNbL2Mo2sQa9jDMc35kqQOoJm4_aT6Dkc9xrEV6O_-5hkDwOlMzIcFLFRtRxRaGEyH-y4Be72Vgc9j_f_vkOgA)
+Moreover a **little bonus for Firefox users**. Thanks to [Firefox Test pilot](https://testpilot.firefox.com/) I "developed" (it was too easy) a [Communitheme inspired Firefox theme](https://color.firefox.com/?theme=XQAAAALtAAAAAAAAAABBKYhm849SCiazH1KEGccwS-xNVAWBveAusLC2VAlvlSjJ6UJSeqAgCYbdwa_-rV70IROd68eEot6ey6DBD6clRBXp1e7Wbm3jkhhZsTB6iGtxUNA9rD_f7WkYu4v4RFB_XR74DFyPAFWYVQkUMNbL2Mo2sQa9jDMc35kqQOoJm4_aT6Dkc9xrEV6O_-5hkDwOlMzIcFLFRtRxRaGEyH-y4Be72Vgc9j_f_vkOgA)
 
 Anyone on [Ubuntu 18.04](https://www.ubuntu.com/download/desktop) can try the theme installing the [snap](https://snapcraft.io/communitheme) package from GNOME Software.
 Stable Snap package will be automatically updated each week, but if you want to try immediatly any new change install from the *edge* channel.
