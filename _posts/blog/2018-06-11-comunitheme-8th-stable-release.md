@@ -11,7 +11,8 @@ share: true
 
 The **Communitheme team** is happy to announce a new table release!
 
-This week release we have
+This release is one of the major updates in the last weeks:
+
 - A new sidebar/mainview color set, hope you like it as we do
 - A back to the future change for text selection
 - A subtle restyle for (disabled) switch
