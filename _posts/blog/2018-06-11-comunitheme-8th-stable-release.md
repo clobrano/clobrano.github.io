@@ -9,7 +9,7 @@ date: 2018-06-11 22:00
 share: true
 ---
 
-The Communitheme team is glad to announche a new table release!
+The **Communitheme team** is happy to announce a new table release!
 
 This week release we have
 - A new sidebar/mainview color set, hope you like it as we do
