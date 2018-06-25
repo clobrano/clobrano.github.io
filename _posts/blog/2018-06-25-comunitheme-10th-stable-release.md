@@ -2,7 +2,7 @@
 layout: post
 excerpt: "Communitheme new stable release"
 categories: blog
-title: Communitheme 9th stable release
+title: Communitheme 10th stable release
 tags: [communitheme,ubuntu,bionicbeaver,theme,opensource]
 published: true
 date: 2018-06-25 22:00
