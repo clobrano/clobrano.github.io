@@ -14,8 +14,9 @@ The **Communitheme team** is happy to announce a new stable release!
 During the first week of July we:
 
 - improved Nemo experience, as promised ;)
-- fixed some bugs in Nautilus and Gnome Terminal (backdrop and tabs)
+- refreshed alt-tab switcher and some colors
 - reviewed toolbar buttons style (hover effect)
+- fixed some bugs in Nautilus and Gnome Terminal (backdrop and tabs)
 
 there are also some important works in progress, but unfortunately they did not make it for this release :)
 
