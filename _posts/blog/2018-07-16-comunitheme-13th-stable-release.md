@@ -13,7 +13,13 @@ The **Communitheme team** is happy to announce a new stable release!
 
 It's the 13th stable release, but no one is superstitious right? :)
 
-This week we worked mainly on bug fixes, clean up and in some background activities regarding the repositories and some more :)
+This week we worked mainly on
+
+- updating icon set
+- bug fixes
+- clean up
+
+and in some background activities regarding the repositories and some more :)
 
 Anyone on [Ubuntu 18.04](https://www.ubuntu.com/download/desktop) can try the theme installing the [snap](https://snapcraft.io/communitheme) package from GNOME Software.
 Stable Snap package will be automatically updated each week, but if you want to try immediatly any new change install from the *edge* channel.
