@@ -4,7 +4,7 @@ excerpt: "Communitheme new stable release"
 categories: blog
 title: Communitheme 14th stable release
 tags: [communitheme,ubuntu,theme,opensource,gnome]
-published: false
+published: true
 date: 2018-07-23 22:00
 share: true
 ---
