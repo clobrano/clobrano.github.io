@@ -4,7 +4,7 @@ excerpt: "Communitheme gets its first stable release after getting the new name 
 categories: blog
 title: Yaru 15th stable release
 tags: [yaru,ubuntu,gnome,communitheme,theme,opensource]
-published: false
+published: true
 date: 2018-07-30 22:00
 share: true
 ---
@@ -15,7 +15,7 @@ This is the first Communitheme/Yaru stable release after announcing the new name
 
 This week update brings the following
 
-- update the Snap information (package description, icon and pictures) and some more packaging fixes
+- update the Snap information, package description and some more packaging fixes
 - copyright fixes
 - a new Login/Lock screen, which brings back the all-purple background, with an improved gradient
 - alignment of gtk2 assets to the gtk3 ones
