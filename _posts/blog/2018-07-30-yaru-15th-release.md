@@ -27,7 +27,7 @@ Stable Snap package will be automatically updated each week, but if you want to 
 snap install communitheme --edge
 {% endhighlight %}
 
-![communitheme-9th-release-pic](/images/yaru-ubuntu.png)
+![communitheme-9th-release-pic](/images/ubuntu-yaru.png)
 
 
 A [Yaru inspired Firefox theme](https://color.firefox.com/?theme=XQAAAALtAAAAAAAAAABBKYhm849SCiazH1KEGccwS-xNVAWBveAusLC2VAlvlSjJ6UJSeqAgCYbdwa_-rV70IROd68eEot6ey6DBD6clRBXp1e7Wbm3jkhhZsTB6iGtxUNA9rD_f7WkYu4v4RFB_XR74DFyPAFWYVQkUMNbL2Mo2sQa9jDMc35kqQOoJm4_aT6Dkc9xrEV6O_-5hkDwOlMzIcFLFRtRxRaGEyH-y4Be72Vgc9j_f_vkOgA) is available, but, please consider that *this is not part of Communitheme official release*.
