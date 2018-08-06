@@ -15,7 +15,7 @@ This week update brings the following
 
 - sync with upstream content
 - updates necessary to be default theme in next release (+1)
-- improved Nautilus backdrop icon color in dark variant
+- improved Nautilus secondary label color
 - reduced icon size in GTK2 (except in the toolbar, to keep it aligned with GTK3)
 - completed the alignment of our slider set to a shared style
 
