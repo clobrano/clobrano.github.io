@@ -11,7 +11,7 @@ share: true
 
 The **Yaru team** is happy to announce a new stable release!
 
-Quite a full week of changes the last one, here the list:
+Quite a full week of changes the last one, here's the list:
 
 - button-box (e.g. Gnome Software) took a dedicated style, instead of mimic stack switcher. This was necessary to avoid problems with complex button-box hierarchies.
 - cleaner default button indication
