@@ -4,7 +4,7 @@ excerpt: "Yaru 18th stable release"
 categories: blog
 title: Yaru 18th stable release
 tags: [yaru,ubuntu,gnome,communitheme,theme,opensource]
-published: false
+published: true
 date: 2018-08-20 22:00
 share: true
 ---
@@ -13,6 +13,7 @@ The **Yaru team** is happy to announce a new stable release!
 
 This week we worked on the following:
 
+- white modal dialog, more similar to Shell and GTK notifications
 - improved icon visibility on destructive (red) button
 - fixed emoji bar visibility (e.g. see gedit)
 - improved geary's message headerbar
