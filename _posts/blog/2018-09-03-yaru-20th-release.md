@@ -4,8 +4,8 @@ excerpt: "Yaru 19th stable release"
 categories: blog
 title: Yaru 19th stable release
 tags: [yaru,ubuntu,gnome,communitheme,theme,opensource]
-published: false
-date: 2018-09-03 22:00
+published: true
+date: 2018-09-05 22:00
 share: true
 ---
 
@@ -17,6 +17,8 @@ This week we made a lot of improvements on the dark variant, let us know your op
 - reduced differences from upstream to simplify future upgrades
 - improved dark and light radio/check buttons backdrop and insensitive states
 - improved dark Nautilus tabs (as well generic notebook tabs), in order to make it more similar to Gnome-terminal
+- Suru Icon refresh
+- improved dark pathbar
 
 Anyone on [Ubuntu 18.04](https://www.ubuntu.com/download/desktop) can try the theme installing the [snap](https://snapcraft.io/communitheme) package from GNOME Software.
 Stable Snap package will be automatically updated each week, but if you want to try immediatly any new change install from the *edge* channel.
