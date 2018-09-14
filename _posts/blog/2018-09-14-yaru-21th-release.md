@@ -4,7 +4,7 @@ excerpt: "Yaru 21th stable release"
 categories: blog
 title: Yaru 21th stable release
 tags: [yaru,ubuntu,gnome,communitheme,theme,opensource]
-published: false
+published: true
 date: 2018-09-14 22:00
 share: true
 ---
