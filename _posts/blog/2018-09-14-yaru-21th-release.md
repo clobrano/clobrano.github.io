@@ -11,7 +11,7 @@ share: true
 
 The **Yaru team** is happy to announce a new stable release!
 
-This was the week of [Cosmic Cuttelfish UI Freeze](https://wiki.ubuntu.com/CosmicCuttlefish/ReleaseSchedule), this means that we from now on we won't see any new UI styling, but only bug fixing and improvement "under the hood".
+This was the week of [Cosmic Cuttelfish UI Freeze](https://wiki.ubuntu.com/CosmicCuttlefish/ReleaseSchedule), this means that, from now on we won't see any new UI styling, but only bug fixing and improvement "under the hood".
 
 Since last release we had tons of contributions, here a short list:
 
