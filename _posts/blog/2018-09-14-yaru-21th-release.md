@@ -11,6 +11,8 @@ share: true
 
 The **Yaru team** is happy to announce a new stable release!
 
+![yaru-release-pic](/images/ubuntu-yaru.png)
+
 This was the week of [Cosmic Cuttelfish UI Freeze](https://wiki.ubuntu.com/CosmicCuttlefish/ReleaseSchedule), this means that, from now on we won't see any new UI styling, but only bug fixing and improvement "under the hood".
 
 Since last release we had tons of contributions, here a short list:
@@ -42,9 +44,6 @@ This will install the **stable** Snap package, which will be automatically updat
 {% highlight bash %}
 snap install communitheme --edge
 {% endhighlight %}
-
-
-![yaru-release-pic](/images/ubuntu-yaru.png)
 
 
 A [Yaru inspired Firefox theme](https://color.firefox.com/?theme=XQAAAALtAAAAAAAAAABBKYhm849SCiazH1KEGccwS-xNVAWBveAusLC2VAlvlSjJ6UJSeqAgCYbdwa_-rV70IROd68eEot6ey6DBD6clRBXp1e7Wbm3jkhhZsTB6iGtxUNA9rD_f7WkYu4v4RFB_XR74DFyPAFWYVQkUMNbL2Mo2sQa9jDMc35kqQOoJm4_aT6Dkc9xrEV6O_-5hkDwOlMzIcFLFRtRxRaGEyH-y4Be72Vgc9j_f_vkOgA) is available, but, please consider that *this is not part of Communitheme official release*.
