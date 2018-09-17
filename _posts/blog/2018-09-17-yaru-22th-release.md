@@ -21,7 +21,7 @@ Here the changes since last release
 - fixed notebook tabs in Nautilus
 - fixes in build scripts
 
-Yaru is already default theme in **Cosmic Cuttlefish 18.10**, so if you like to try it, please report any feedback on the Ubuntu HUB or on our Github repository.
+Yaru is already default theme in **Cosmic Cuttlefish 18.10**, so if you like to try it, please report any feedback on the [Ubuntu HUB](https://community.ubuntu.com/t/call-for-participation-an-ubuntu-default-theme-lead-by-the-community) or on our [Github repository](https://github.com/ubuntu/yaru).
 
 If you want to try it on [Ubuntu 18.04](https://www.ubuntu.com/download/desktop), install the [snap](https://snapcraft.io/communitheme) package from GNOME Software or from SHELL using the following command
 
