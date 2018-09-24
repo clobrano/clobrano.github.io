@@ -4,7 +4,7 @@ excerpt: "Yaru 23rd stable release"
 categories: blog
 title: Yaru 23rd stable release
 tags: [yaru,ubuntu,gnome,communitheme,theme,opensource]
-published: false
+published: true
 date: 2018-09-24 22:00
 share: true
 ---
