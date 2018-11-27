@@ -5,7 +5,7 @@ categories: blog
 title: Yaru 26th stable release
 tags: [yaru,ubuntu,gnome,communitheme,theme,opensource]
 published: true
-date: 2018-11-26 20:00
+date: 2018-11-27 20:00
 share: true
 ---
 
