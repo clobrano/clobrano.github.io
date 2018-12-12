@@ -12,6 +12,12 @@ share: true
 Lately, it's been common for me to add per-project VIM commands. It's usually a simple thing, like adapting the `:make` command to the project structure, e.g. when the makefile is in some subdirectory
 
     nnoremap <leader>1 :make -C somedir
+    
+or
+
+    nnoremap <leader>3 yaru-build.sh
+    
+:)
 
 VIM remembers last commands when the session is closed, so re-setting this mapping every time is not much of a pain, but doing it again and again at last gets annoying.
 
@@ -22,6 +28,6 @@ I added at the end of my `.vimrc` (actually `init.vim`, since I usually use [neo
         exe 'source vimrc.local'
     endif
 
-so that, if a project has a file called `vimrc.local` it is sourced, extending normal VIM configuration and if not, it fails silently.
+so that, if a project has a file called `vimrc.local` it is sourced, extending normal VIM configuration, if not, it fails silently.
 
 If the project is under versioning and it's using GIT, you might want to add `vimrc.local` to *gitignore*. I suggest to use the global gitignore, to avoid sharing your personal gitignore configuration with the project.
