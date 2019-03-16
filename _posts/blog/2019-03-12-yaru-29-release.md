@@ -4,7 +4,7 @@ excerpt: "Yaru 29th stable release"
 categories: blog
 title: Yaru 29th stable release
 tags: [yaru,ubuntu,gnome,communitheme,theme,opensource]
-published: false
+published: true
 date: 2019-03-13 20:00
 share: true
 ---
