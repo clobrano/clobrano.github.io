@@ -5,7 +5,7 @@ excerpt: "An unexpected trip"
 categories: blog
 tags: [guadec, gnome, canonical, conference, greece]
 date: 2019-08-05 22:00
-published: false
+published: true
 share: true
 ---
 
