@@ -1,6 +1,6 @@
 ---
 title: Yaru next move
-excerpt: "Yaru"
+excerpt: "new course of Yaru development"
 categories: blog
 tags: [yaru, ubuntu, theme, adwaita, guadec]
 date: 2019-08-09 07:00
@@ -24,11 +24,11 @@ The Yaru team (but mostly Frederik, who did a great job) took a new, more upstre
 
 This was fundamental to reduce the customization needed for Yaru and other theme variations and allowed us to work internally developing and testing a **huge rebase on the newest Adwaita**.
 
-The result of this work landed in master branch at the beginning of this week. It has not been released officially yet, but we hope it will be soon and in the meantime **we would be glad if anyone wants to test it and give us constructive feedback**.
+The result of this work landed in master branch at the beginning of this week. It has not been released officially yet, but we hope it will be soon, and in the meantime **we would be glad if anyone wants to test it and give us constructive feedback**.
 
 We solved the "customization theme problem"? Well, surely not. We alone, as Yaru team, cannot of course.
 
-We kept the distintive Yaru traits and reduced some big differences from Adwaita, so that (hopefully) GNOME application developers won't find as many surprises as they had in the past and we think that this is important. We will also take part in the next [GUADEC](https://2019.guadec.org/), where [Vendor Themes](https://wiki.gnome.org/GUADEC/2019/Hackingdays/VendorThemes) will be discussed again and we will try to give our best in future developments.
+We kept the distinctive Yaru traits and reduced some big differences from Adwaita, so that (hopefully) GNOME application developers won't find as many surprises as they had in the past, and we think that this is important. We will also take part in the next [GUADEC](https://2019.guadec.org/), where [Vendor Themes](https://wiki.gnome.org/GUADEC/2019/Hackingdays/VendorThemes) will be discussed again and we will try to give our best in future developments.
 
 Stay tuned!
 
