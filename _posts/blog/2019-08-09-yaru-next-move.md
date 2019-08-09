@@ -3,7 +3,7 @@ title: Yaru next move
 excerpt: "Yaru"
 categories: blog
 tags: [yaru, ubuntu, theme, adwaita, guadec]
-date: 2019-08-09 22:00
+date: 2019-08-09 07:00
 published: true
 share: true
 layout: post
