@@ -20,7 +20,7 @@ Starting from the release of the **new Adwaita theme** with GTK 3.32 and the dis
 
 so we tried to find a middle ground where both parts can feel satisfied.
 
-The Yaru team (but mostly Frederik, who did a great job) took a new, more upstream oriented, contribution approach, proposing some of our solutions and ideas to GNOME developers, that - as always stated - have been quite open to consider, discuss and in some cases accept 🎉.
+The Yaru team (but mostly Frederik, who did a great job) took a new, more upstream oriented, contribution approach, proposing some of its solutions and ideas to GNOME developers, that - as always stated - have been quite open to consider, discuss and in some cases accept 🎉.
 
 This was fundamental to reduce the customization needed for Yaru and other theme variations and allowed us to work internally developing and testing a **huge rebase on the newest Adwaita**.
 
