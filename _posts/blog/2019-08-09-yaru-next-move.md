@@ -28,7 +28,7 @@ The result of this work landed in master branch at the beginning of this week. I
 
 We solved the "customization theme problem"? Well, surely not. We alone, as Yaru team, cannot of course.
 
-We kept the distinctive Yaru traits and reduced some big differences from Adwaita, so that (hopefully) GNOME application developers won't find as many surprises as they had in the past, and we think that this is important. We will also take part in the next [GUADEC](https://2019.guadec.org/), where [Vendor Themes](https://wiki.gnome.org/GUADEC/2019/Hackingdays/VendorThemes) will be discussed again and we will try to give our best in future developments.
+We kept the distinctive Yaru traits and reduced some big differences from Adwaita, so that (hopefully) GNOME application developers won't find as many surprises as they had in the past, and we think that this is important. [We will also take part in the next GUADEC](https://clobrano.github.io/blog/i-am-going-to-guadec/), where [Vendor Themes](https://wiki.gnome.org/GUADEC/2019/Hackingdays/VendorThemes) will be discussed again and we will try to give our best in future developments.
 
 Stay tuned!
 
