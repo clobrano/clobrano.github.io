@@ -14,15 +14,17 @@ Finally here is my post analysis of the [Gnome GUADEC 2019](https://2019.guadec.
 This post is incredibly late and after the initial draft (30th of August :O) many things happened that consumed all my free time, e.g. the furious last weeks of the Yaru release for Ubuntu 19.10 :).
 
 
-**GUADEC** is made of two phases.
+Let's start with the basics: **GUADEC** is made of two phases.
 
 ## Conferences and talks
 
-**The first three days are all about conferences and talks**. Since I had not planned any talk, I could relax there and finally meet many people I have only talk to online as well as some new ones. This is a great aspect of GUADEC: to finally give a face to online friends and enjoy face to face conversations.
+**The first three days are all about conferences and talks**. Since I had not planned any talk, I could relax there and finally meet many people I have only chatted to online as well as some new ones. This is a great aspect of GUADEC: to finally give a face to online friends and enjoy face to face conversations.
 
 > This is a great aspect of GUADEC: to finally give a face to online friends and enjoy face to face conversations.
 
-It was awesome to see the (partially complete) Ubuntu Desktop team: Marco, Iain, Robert, Ken, Seb, James, as well as Carlos Soriano, who helped me in some Nautilus topics, Carl and Ian from System76 and Cassidy from elementary OS, who also wrote a [great post about this experience](https://blog.elementary.io/elementary-at-guadec-2019/).
+It was awesome to spend time with the (partially complete) Ubuntu Desktop team: Marco, Iain, Robert, Ken, Seb, James, as well as Carlos Soriano, who helped me in some Nautilus topics, Carl and Ian from System76 and Cassidy from elementary OS, who also wrote a [great post about this experience](https://blog.elementary.io/elementary-at-guadec-2019/).
+
+Very pleased also by the community events organized during these first three days.
 
 ## BoFs
 
@@ -49,13 +51,13 @@ We agreed to start with a subset of features, differentiating between three main
 - **better do it upstream**, e.g. what was already proposed and accepted upstream, like different padding/sizing and other stylistic ideas,
 - **here be dragons**, frankly quite clear already.
 
-I liked how **the discussion grew from skeptical to interested**. A better theme API is useful for third party themes as well as for apps developers[^4].
+I liked how **the discussion grew from skeptical to interested**, with the BoF extended a couple of hours more because we were all focused in pushing this forward and convinced that better theme APIs are useful for third party themes as well as for apps developers[^4].
 
 ## Follow up
 
-An initial organization and work regarding Vendor Themes, renamed *Vendor Styles*, has started immediatly:
+An initial organization and work regarding Vendor Themes, renamed *Vendor Styles*, has started immediately:
 
-- A [dedicated topic](https://discourse.gnome.org/t/gtk-adwaita-and-vendor-styles/1641) in GNOME discourse, for discussion and coordination.
+- A [dedicated topic](https://discourse.gnome.org/t/gtk-adwaita-and-vendor-styles/1641) in GNOME discourse, for discussion and coordination on goals and first steps.
 - Initiative for [reviewing the use of custom colors in gtk apps](https://gitlab.gnome.org/GNOME/Initiatives/issues/11).
 - [Improved documentation](https://gitlab.gnome.org/GNOME/gtk/commits/wip/jimmac/document-public-colors) 
 
