@@ -51,7 +51,10 @@ We agreed to start with a subset of features, differentiating between three main
 - **better do it upstream**, e.g. what was already proposed and accepted upstream, like different padding/sizing and other stylistic ideas,
 - **here be dragons**, frankly quite clear already.
 
-I liked how **the discussion grew from skeptical to interested**, with the BoF extended a couple of hours more because we were all focused in pushing this forward and convinced that better theme APIs are useful for third party themes as well as for apps developers[^4].
+
+I liked how **the discussion grew from skeptical to interested**, with the BoF extended a couple of hours more because we were all focused in pushing this forward and convinced that better theme APIs are useful for third party themes as well as for apps developers[^4] (branding is not only a Distro thing after all).
+
+For more details, Cassidy's post I linked above is a great read, as well as [Tobias' one](https://blogs.gnome.org/tbernard/2019/09/05/guadec-2019/).
 
 ## Follow up
 
