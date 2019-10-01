@@ -1,0 +1,72 @@
+---
+layout: post
+title: Notes about GUADEC 2019
+excerpt: "I went at GUADEC, what now?"
+category: blog
+tags: [gnome,theme,yaru,guadec,opensource,design]
+published: false
+share: true
+---
+
+
+Finally here is my post analysis of the [Gnome GUADEC 2019](https://2019.guadec.org/) conference in Thessaloníki, to which I participated - together with Frederik - on behalf of the Yaru team, thanks to the [Ubuntu Community sponsorship](https://clobrano.github.io/blog/i-am-going-to-guadec/).
+
+This post is incredibly late and after the initial draft (30th of August :O) many things happened that consumed all my free time, e.g. the furious last weeks of the Yaru release for Ubuntu 19.10 :).
+
+
+**GUADEC** is made of two phases.
+
+## Conferences and talks
+
+**The first three days are all about conferences and talks**. Since I had not planned any talk, I could relax there and finally meet many people I have only talk to online as well as some new ones. This is a great aspect of GUADEC: to finally give a face to online friends and enjoy face to face conversations.
+
+> This is a great aspect of GUADEC: to finally give a face to online friends and enjoy face to face conversations.
+
+It was awesome to see the (partially complete) Ubuntu Desktop team: Marco, Iain, Robert, Ken, Seb, James, as well as Carlos Soriano, who helped me in some Nautilus topics, Carl and Ian from System76 and Cassidy from elementary OS, who also wrote a [great post about this experience](https://blog.elementary.io/elementary-at-guadec-2019/).
+
+## BoFs
+
+**The second part is dedicated to workshops**, also known as **Birds of Feather** or simply [BoF](https://schedule.guadec.org/bofs).
+
+> The (idiomatic) phrase "birds of a feather" meaning "people having similar characters, backgrounds, interests, or beliefs".
+[source: [Wikipedia](https://en.wikipedia.org/wiki/Birds_of_a_feather_(computing))]
+
+ I took part in two of them.
+
+### FreeDesktop Dark Style Preference
+
+The [FreeDesktop Dark Style Preference](https://schedule.guadec.org/bofs/194) BoF[^2] took place, quite shortly indeed, the 26th morning at the beginning of [GTK BoF](https://schedule.guadec.org/bofs/197), since the two workshops shared the same participants. We[^1] discussed the main reasons to have a cross platform Dark Style definition and the main problems (e.g. naming convention, themes that do not provide a dark variant, or themes that provide more than one).
+
+### Vendor Themes
+
+The 27th was the time for [Vendor Themes](https://schedule.guadec.org/bofs/314) BoF, the one I was waiting for. 
+
+There is no doubt that *theming* GTK application is a sensible topic. Some developers do not appreciate/want[^3] it, but Neil McGovern, Executive Director of the GNOME Foundation, who organized and moderated the workshop, stated clearly that it is something that GNOME wants to support and in fact, the discussion, with some ups and downs, went really well!
+
+We agreed to start with a subset of features, differentiating between three main areas:
+
+- **supported**, e.g. semantic (e.g. accent colors) and non-semantic colors (palette) and colored headerbars,
+- **better do it upstream**, e.g. what was already proposed and accepted upstream, like different padding/sizing and other stylistic ideas,
+- **here be dragons**, frankly quite clear already.
+
+I liked how **the discussion grew from skeptical to interested**. A better theme API is useful for third party themes as well as for apps developers[^4].
+
+## Follow up
+
+An initial organization and work regarding Vendor Themes, renamed *Vendor Styles*, has started immediatly:
+
+- A [dedicated topic](https://discourse.gnome.org/t/gtk-adwaita-and-vendor-styles/1641) in GNOME discourse, for discussion and coordination.
+- Initiative for [reviewing the use of custom colors in gtk apps](https://gitlab.gnome.org/GNOME/Initiatives/issues/11).
+- [Improved documentation](https://gitlab.gnome.org/GNOME/gtk/commits/wip/jimmac/document-public-colors) 
+
+All the rest is in our hands.
+
+### Conclusion
+
+**GUADEC was a terrific experience for me**. Everything was way out of my usual days, both professionally and personally. If I had to think about getting out of my "comfort zone", I could not have a better way than this and I hope to join again next year.
+
+
+[^1]: I like *pluralis majestatis*, but I did very little :D
+[^2]: Introduced by [The Need for a FreeDesktop Dark Style Preference](https://www.youtube.com/watch?v=gi_3b81eBUE).
+[^3]: With valid points indeed.
+[^4]: do you wanna use *green* for some reason? Here is the *Theme's green selection of colors* that goes well with all the other colors.
