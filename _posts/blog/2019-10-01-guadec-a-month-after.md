@@ -3,8 +3,9 @@ layout: post
 title: Notes about GUADEC 2019
 excerpt: "I went at GUADEC, what now?"
 category: blog
-tags: [gnome,theme,yaru,guadec,opensource,design]
-published: false
+tags: [gnome,theme,yaru,ubuntu,guadec]
+date: 2019-10-02 08:00
+published: true
 share: true
 ---
 
