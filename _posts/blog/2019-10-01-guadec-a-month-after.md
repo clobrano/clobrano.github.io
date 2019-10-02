@@ -10,7 +10,7 @@ layout: post
 ---
 
 
-This post is incredibly late. After the initial draft (30th of August :O) many things happened and consumed all my free time, e.g. the last weeks of the Yaru release for Ubuntu 19.10 :).
+This post is incredibly late. After the initial draft (30th of August 😒) many things happened and consumed all my free time, e.g. the last weeks of the Yaru release for Ubuntu 19.10 😊.
 
  Last August, together with Frederik, I participated to the [GUADEC 2019](https://2019.guadec.org/) conference in Thessaloníki, on behalf of the Yaru team, thanks to the [Ubuntu Community sponsorship](https://clobrano.github.io/blog/i-am-going-to-guadec/). Here is my experience.
 
@@ -42,7 +42,7 @@ The [FreeDesktop Dark Style Preference](https://schedule.guadec.org/bofs/194) Bo
 
 The 27th was the time for the [Vendor Themes](https://schedule.guadec.org/bofs/314) BoF, the one I was waiting for. 
 
-There is no doubt that *theming* GTK application is a sensible topic. Some developers do not appreciate/want it[^3], but Neil McGovern, Executive Director of the GNOME Foundation, who organized and moderated the workshop, stated clearly that it is something that GNOME wants to support and in fact, the discussion, with some ups and downs, went really well!
+There is no doubt that *theming* GTK application is a sensible topic. Some developers do not appreciate/want it[^3], but Neil McGovern, Executive Director of the GNOME Foundation, who organized and moderated the workshop, stated clearly that it is something that GNOME wants to support, and in fact the discussion, with some ups and downs, went really well! 🎉
 
 We agreed to start with a subset of features, differentiating between three main areas:
 
@@ -70,7 +70,7 @@ All the rest is in our hands.
 **GUADEC was a terrific experience for me**. Everything was way out of my usual days, both professionally and personally. If I had to think about getting out of my "comfort zone", I could not have a better way than this and I hope to join again next year, above all if I succeed in be involved in more upstream work.
 
 
-[^1]: I like *pluralis majestatis*, but I did very little :D
+[^1]: I like *pluralis majestatis*, but I did very little 😊
 [^2]: Introduced by Cassidy's [The Need for a FreeDesktop Dark Style Preference](https://www.youtube.com/watch?v=gi_3b81eBUE).
 [^3]: With valid points indeed.
 [^4]: do you wanna use *green* for some reason? Here is the *Theme's green selection of colors* that goes well with all the other colors.
