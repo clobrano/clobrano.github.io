@@ -2,7 +2,7 @@
 title: Notes about GUADEC 2019
 excerpt: "I went at GUADEC, what now?"
 categories: blog
-tags: [gnome,theme,yaru,ubuntu,guadec]
+tags: [gnome, theme, yaru, ubuntu, guadec]
 date: 2019-10-02 08:00
 published: true
 share: true
