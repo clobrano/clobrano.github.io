@@ -11,14 +11,14 @@ share: true
 
 This post is incredibly late. After the initial draft (30th of August :O) many things happened and consumed all my free time, e.g. the last weeks of the Yaru release for Ubuntu 19.10 :).
 
- Last August, together with Frederik, I participated to [GUADEC 2019](https://2019.guadec.org/) conference in Thessaloníki, on behalf of the Yaru team, thanks to the [Ubuntu Community sponsorship](https://clobrano.github.io/blog/i-am-going-to-guadec/). Here is my experience.
+ Last August, together with Frederik, I participated to the [GUADEC 2019](https://2019.guadec.org/) conference in Thessaloníki, on behalf of the Yaru team, thanks to the [Ubuntu Community sponsorship](https://clobrano.github.io/blog/i-am-going-to-guadec/). Here is my experience.
 
 
 ## Conferences and talks
 
-The first three days are all about conferences and talks. Since I had planned no talks, I could relax and finally meet many people I have only chatted to online as well as some new ones. This is a great aspect of GUADEC: to finally give a face to online friends and enjoy face to face conversation.
+The first three days are all about conferences and talks. Since I had planned no talks, I could relax and finally meet many people I have only chatted with online as well as some new ones. This is one of the best things of GUADEC: to finally give a face to online friends and enjoy face to face conversation.
 
-> This is a great aspect of GUADEC: to finally give a face to online friends and enjoy face to face conversations.
+> This is one of the best things of GUADEC: to finally give a face to online friends and enjoy face to face conversation.
 
 It was awesome to spend time with the (partially complete) Ubuntu Desktop team: Marco, Iain, Robert, Ken, Seb, James, as well as Carlos Soriano, who helped me in some Nautilus topics, Carl and Ian from System76 and Cassidy from elementary OS, who also wrote a [great post about his experience here Greece](https://blog.elementary.io/elementary-at-guadec-2019/).
 
