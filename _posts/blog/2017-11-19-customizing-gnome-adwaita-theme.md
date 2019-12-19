@@ -1,13 +1,14 @@
 ---
 layout: post
 title: Customizing Gnome Adwaita theme
-excerpt: "how to test changes to the official GTK+ theme"
+excerpt: how to test changes to the official GTK+ theme
 category: blog
-tags: [opensource gnome]
-date: 2017-11-19 00:00
+tags:
+  - 'opensource, gnome'
+date: '2017-11-19 00:00'
 image:
-    teaser:
-    feature:
+  teaser: null
+  feature: null
 published: true
 share: true
 ---
