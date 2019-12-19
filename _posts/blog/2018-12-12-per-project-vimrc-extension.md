@@ -1,11 +1,16 @@
 ---
 layout: post
-excerpt: "Extend VIM configuration per project"
+excerpt: Extend VIM configuration per project
 categories: blog
 title: Per project VIM setting extension
-tags: [vim,neovim,project,configuration,extension,vimscript,linux,macos]
+tags:
+  - vim
+  - configuration
+  - vimscript
+  - linux
+  - macos
 published: true
-date: 2018-12-12 20:00
+date: '2018-12-12 20:00'
 share: true
 ---
 
