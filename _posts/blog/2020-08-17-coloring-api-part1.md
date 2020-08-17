@@ -6,7 +6,7 @@ tags:
   - gnome
   - theme
   - Slimbook
-date: '2020-08-17 22:00'
+date: '2020-08-17 16:00'
 share: true
 layout: post
 excerpt: Gnome is working on a real Themes support
