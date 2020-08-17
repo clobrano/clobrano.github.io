@@ -1,12 +1,12 @@
 ---
 published: true
-title: My part in "A Coloring API for Gnome"
+title: My part in A Coloring API for Gnome
 categories: blog
 tags:
   - gnome
   - theme
   - Slimbook
-date: '2020-08-17 16:00'
+date: 2020-08-17 16:00
 share: true
 layout: post
 excerpt: Gnome is working on a real Themes support
