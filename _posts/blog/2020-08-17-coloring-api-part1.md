@@ -39,7 +39,7 @@ Finally, consider that being the dark headerbar the main source of such possible
 
 I installed a fresh Fedora 32 on [the kindly sponsored Slimbook](https://twitter.com/carlolobrano/status/1266808827405578242). I can not thank enough the people at [Slimbook](https://slimbook.es/en/), because I can now dedicate a full machine only for this purpose, instead of using my daily driver (which I can't risk to break too much).
 
-Then I contacted Gnome devs at **#gnome-design** to get some hints and, thanks to them, I started immediatly playing with Gtk directly in [Gnome Builder](https://wiki.gnome.org/Apps/Builder), instead that configuring jhbuild, which was what I expected to be forced to 😓.
+Then I contacted Gnome devs on IRC at **#gnome-design** to get some hints and, thanks to them, I started immediatly playing with Gtk directly in [Gnome Builder](https://wiki.gnome.org/Apps/Builder), instead that configuring jhbuild, which was what I expected to be forced to 😓.
 
 So, the plan was:
 
@@ -64,4 +64,3 @@ Well, that's enough for now. If not for other, this exercise will improve my blo
 
 
 [^libhandy]: If you think about **libhandy**, yes I think about this too.
-
