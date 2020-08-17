@@ -1,8 +1,16 @@
 ---
-published: false
+published: true
+title: My part in "A Coloring API for Gnome"
+categories: blog
+tags:
+  - gnome
+  - theme
+date: '2020-08-17 22:00'
+share: true
+layout: post
+excerpt: Gnome is working on a real Themes support
 ---
 
-# My part in "A Coloring API for Gnome"
 
 I should start writing about this, regardless of how this effort will end up with, and make it public, in the hope that this will:
 
