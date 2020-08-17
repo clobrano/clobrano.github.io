@@ -2,10 +2,7 @@
 published: true
 title: My part in A Coloring API for Gnome
 categories: blog
-tags:
-  - gnome
-  - theme
-  - Slimbook
+tags: [gnome, theme, Slimbook]
 date: 2020-08-17 16:00
 share: true
 layout: post
