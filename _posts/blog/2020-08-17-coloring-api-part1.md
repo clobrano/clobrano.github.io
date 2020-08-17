@@ -21,7 +21,7 @@ I should start writing about this, regardless of how this effort will end up wit
 
 The starting point is the excellent [Adrien Plazas' post](https://aplazas.pages.gitlab.gnome.org/blog/blog/2020/04/02/coloring-api.html) about the outcome of GNOME's [Design Tools Hackfest 2020](https://wiki.gnome.org/Hackfests/DesignTools2020), which in turn follows up the GUADEC 2019 [vendor themes BoF](https://wiki.gnome.org/GUADEC/2019/Hackingdays/VendorThemes) which I took part in.
 
-My goal in this is to help developing some API to allow a certain level of Gnome personalization for application developers first, and distributions then. To do this, Gtk/Shell CSS stylesheets shall use the CSS exported color variables like `@theme_bg_color`, `@theme_selected_bg_color`, etc., which means all the SASS files shall use them too, and this finally leads to stop using some SASS features (e.g. `if/else` and color functions like `lighten`, `darken`, ecc. which works with constant color values only)
+My goal in this is to help developing some API to allow a certain level of Gnome personalization for application developers first, and distributions then. To do this, Gtk/Shell CSS stylesheets shall use the CSS exported color variables like `@theme_bg_color`, `@theme_selected_bg_color`, etc., which means all the SASS files shall use them too, and this finally leads to stop using some SASS features (e.g. `if/else` and color functions like `lighten`, `darken`, ecc.) which work with constant color values only.
 
 
 ## Disclaimer
