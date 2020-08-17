@@ -23,7 +23,7 @@ My goal in this is to help developing some API to allow a certain level of Gnome
 
 ## Disclaimer
 
-There's some clear resistance in doing this, but for what I could understand not for the feature itself, which is what I'd like to provide.
+There's some clear external resistance in doing this, but for what I could understand not for the feature itself, which is what I'd like to provide.
 
 As part of the Yaru team, I understood that the bugs we're facing lately will be very hard to fix the old way, also considering the rapid development of some new cool gtk features[^libhandy], and whatever some people might think, nobody likes to ship apps with visual defects. However, I think it is right for App developers, as well as for Distributions, to show their brand somehow.
 
@@ -43,7 +43,7 @@ So, the plan was:
 1. develop a simple test app as part of **gtk-demo**, which is run automatically form Gnome Builder
 2. tackle the two most common patterns identified by Adrian:
 
-   > Common patterns in vendor themes are to change the accent color from the default blue to something better matching their brand like orange or green, another is to have a light theme but a dark titlebar as do Ubuntu and Pop!_OS.
+   > Common patterns in vendor themes are to change the accent color from the default blue to something better matching their brand like orange or green, another is to have a light theme but a dark titlebar as do Ubuntu and Pop!OS.
 
 About this, I started with the accent colour, thinking it would be easier, but I recognized that the primary problem should be to convert all the sass functions into gtk CSS one
 
