@@ -39,7 +39,7 @@ Finally, consider that being the dark headerbar the main source of such possible
 
 I installed a fresh Fedora 32 on [the kindly sponsored Slimbook](https://twitter.com/carlolobrano/status/1266808827405578242). I can not thank enough the people at [Slimbook](https://slimbook.es/en/), because I can now dedicate a full machine only for this purpose, instead of using my daily driver (which I can't risk to break too much).
 
-Then I contacted Gnome devs on IRC at **#gnome-design** to get some hints and, thanks to them, I started immediatly playing with Gtk directly in [Gnome Builder](https://wiki.gnome.org/Apps/Builder), instead that configuring jhbuild, which was what I expected to be forced to 😓.
+Then I contacted Gnome devs on IRC at **#gnome-design** to get some hints and, thanks to them, I started immediately playing with Gtk directly in [Gnome Builder](https://wiki.gnome.org/Apps/Builder), instead that configuring jhbuild, which was what I expected to be forced to 😓.
 
 So, the plan was:
 
@@ -58,7 +58,7 @@ and this the list of sass functions used in Adwaita css
 
 > lighten, darken, mix, desaturate, transparentize, invert
 
-Unfortunately `lighter` and `darker` cannot be used, since they apply a fixed color change (about 30% variation), while the correspondant `lighten` and `darken` take the amount as second paramenter, but I hope to get something working using `shade` instead.
+Unfortunately `lighter` and `darker` cannot be used, since they apply a fixed color change (about 30% variation), while the correspondent `lighten` and `darken` take the amount as second paramenter, but I hope to get something working using `shade` instead.
 
 Well, that's enough for now. If not for other, this exercise will improve my blogging skills 😀
 
