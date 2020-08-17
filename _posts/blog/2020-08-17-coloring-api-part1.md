@@ -26,7 +26,7 @@ My goal in this is to help developing some API to allow a certain level of Gnome
 
 ## Disclaimer
 
-There's some clear resistance in doing this, but for what I could uderstand not for the feature itself, which is what I'd like to provide.
+There's some clear resistance in doing this, but for what I could understand not for the feature itself, which is what I'd like to provide.
 
 As part of the Yaru team, I understood that the bugs we're facing lately will be very hard to fix the old way, also considering the rapid development of some new cool gtk features[^libhandy], and whatever some people might think, nobody likes to ship apps with visual defects. However, I think it is right for App developers, as well as for Distributions, to show their brand somehow.
 
