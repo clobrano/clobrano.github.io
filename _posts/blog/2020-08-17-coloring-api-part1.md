@@ -9,7 +9,7 @@ tags:
 date: 2020-08-17 16:00
 share: true
 layout: post
-excerpt: Gnome is working on a real Themes support
+excerpt: "Gnome is working on a real Themes support"
 ---
 
 
