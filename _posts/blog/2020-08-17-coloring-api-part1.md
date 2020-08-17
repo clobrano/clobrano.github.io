@@ -5,6 +5,7 @@ categories: blog
 tags:
   - gnome
   - theme
+  - Slimbook
 date: '2020-08-17 22:00'
 share: true
 layout: post
