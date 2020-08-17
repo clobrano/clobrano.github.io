@@ -28,7 +28,7 @@ My goal in this is to help developing some API to allow a certain level of Gnome
 
 There's some clear resistance in doing this, but for what I could uderstand not for the feature itself, which is what I'd like to provide.
 
-As part of the Yaru team, I understood that the bugs we're facing lately will be very hard to fix the old way, also considering the rapid development of some new cool gtk features[^libhandy], and whatever some people might think, nobody likes to ship apps with visual defects. However, I think is  right for App developers as well as Distro to show their brand somehow.
+As part of the Yaru team, I understood that the bugs we're facing lately will be very hard to fix the old way, also considering the rapid development of some new cool gtk features[^libhandy], and whatever some people might think, nobody likes to ship apps with visual defects. However, I think it is right for App developers, as well as for Distributions, to show their brand somehow.
 
 While it is possible to break an app with bad theme support - and by broken I mean unusable in some way - I am not aware of any broken app at the moment of writing. If you know better, please consider opening a fix request at the [Yaru project](https://github.com/ubuntu/yaru/issues). However since "broken" doesn't only mean unusable, please consider it even if Yaru just behaves weird on any app you use.
 
