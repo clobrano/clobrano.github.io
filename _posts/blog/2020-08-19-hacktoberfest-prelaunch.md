@@ -27,5 +27,3 @@ Moreover, the people ad Hacktoberfest had a great idea for 2020:
 > We’re offering an alternative, environmentally friendly choice of swag: You can choose the ‘pick trees, not tees’ option to replace a Hacktoberfest T-shirt with a planted tree in celebration of your accomplishments.
 
 So, I might keep my contributor hat for 2020, and go for a tree
-
-
