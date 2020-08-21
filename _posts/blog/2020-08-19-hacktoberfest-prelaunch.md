@@ -1,13 +1,14 @@
 ---
-published: true
-tags: [opensource, hacktoberfest]
 title: Hacktoberfest 2020 pre-launch
 excerpt: "Go for a tree this year"
+tags: [opensource, hacktoberfest]
 layout: post
 categories: blog
-date: 2020-08-19 15:00
+date: 2020-08-21 18:00
+published: true
 share: true
 ---
+
 
 Hacktoberfest entered [pre-launch](https://hacktoberfest.digitalocean.com/?utm_medium=email&utm_source=hacktoberfest&utm_campaign=pre-launch_&utm_content=pp) phase!
 
