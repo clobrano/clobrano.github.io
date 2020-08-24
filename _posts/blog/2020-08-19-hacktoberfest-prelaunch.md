@@ -1,12 +1,12 @@
 ---
-title: Hacktoberfest 2020 pre-launch
-excerpt: "Go for a tree this year"
-tags: [opensource, hacktoberfest]
-layout: post
-categories: blog
-date: 2020-08-21 18:00
 published: true
+title: Hacktoberfest 2020 pre launch
+categories: blog
+tags: [opensource, hacktoberfest]
+date: 2020-08-24 8:00
 share: true
+layout: post
+excerpt: "Go for a tree this year"
 ---
 
 
